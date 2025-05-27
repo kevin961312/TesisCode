@@ -98,6 +98,7 @@ for (m in mValue)
   # Variables locales
   NumVariable <- 30
   Observations <- 10000
+  
   MiddlePoint <- floor(Observations/2)+1
   Percent <- 1
   # Matrices de Covarianza

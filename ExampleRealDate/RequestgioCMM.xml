@@ -1,0 +1,380 @@
+<!-- Honduras dev -->
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:e="http://www.technisys.net/cmm/services/errors/v1.0"
+    xmlns:md="http://www.technisys.net/cmm/services/metadata/v2.0"
+    xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+    xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <SOAP-ENV:Header>
+        <md:metadata>
+            <traceNumber>1829065.2266698</traceNumber>
+            <serviceId>singleSelectCustomerDataSFB</serviceId>
+            <serviceVersion>0.0</serviceVersion>
+            <sessionId>0A6CC123480528AADEFDA09C2B3D1767</sessionId>
+            <targetChannel>
+                <mnemonic>MB</mnemonic>
+            </targetChannel>
+            <executingChannel>
+                <mnemonic>MB</mnemonic>
+            </executingChannel>
+            <address>ip=10.20.20.20;</address>
+            <sourceDate>20240726102319023</sourceDate>
+            <channelDispatchDate>20240726102319023</channelDispatchDate>
+            <locale>es_HN</locale>
+            <featureId>ROL@404</featureId>
+            <institutionType>UNDEFINED</institutionType>
+            <msgTypeId>200</msgTypeId>
+            <terminalId>Safari;604;en-US;Mac OS;America/Bogota;186.29.210.174;</terminalId>
+            <organizationId>uriTech=EMPRESA@27960;uriSFB=IDENTIDAD#0801193801011;uriRules=IDENTIDAD#0801193801011</organizationId>
+            <organizationOperatorId>uriTech=OPERADOR_EMPRESA@27971;uriSFB=IDENTIDAD#0801193801011;uriRules=IDENTIDAD#0801193801011</organizationOperatorId>
+            <executingOperatorId>uriTech=OPERADOR_EMPRESA@27971;uriSFB=IDENTIDAD#0801193801011;uriRules=IDENTIDAD#0801193801011</executingOperatorId>
+            <paginationInfo/>
+            <branchId>1</branchId>
+            <userId/>
+            <parityCurrencyId/>
+            <localCurrencyId/>
+            <localCountryId/>
+            <bankId/>
+            <organizationType>
+                <mnemonic>PERSONAS</mnemonic>
+            </organizationType>
+            <internals>
+                <serviceRequestTimestamp>20240726112115300</serviceRequestTimestamp>
+            </internals>
+        </md:metadata>
+        <wsse:Security SOAP-ENV:mustUnderstand="true">
+            <saml2:Assertion
+                xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                   ID="_716685CF6D246B06E613983675276302"
+                                   IssueInstant="2014-04-24T19:25:27.630Z"
+                                   Version="2.0"
+                                   xsi:type="saml2:AssertionType">
+                <saml2:Issuer>CyberbankMultichannelManager</saml2:Issuer>
+                <saml2:Subject>
+                    <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">uriTech=OPERADOR_EMPRESA@27971;uriSFB=IDENTIDAD#0801193801011;uriRules=IDENTIDAD#0801193801011</saml2:NameID>
+                    <saml2:SubjectConfirmation Method="METODO_AUTENTICACION@3;uriSFB=USUARIO_CLAVE">
+                        <saml2:SubjectConfirmationData xsi:type="saml2:KeyInfoConfirmationDataType">
+                            <ds:KeyInfo
+                                xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                                <ds:KeyAlias>0801193801011</ds:KeyAlias>
+                                <KeyValue>xxxxxxxxxxxx</KeyValue>
+                            </ds:KeyInfo>
+                            <saml2:authenticationMethodSchema>uriTech=ESQUEMA_USER_PASSWORD@27966;uriSFB=USUARIO_CLAVE</saml2:authenticationMethodSchema>
+                        </saml2:SubjectConfirmationData>
+                    </saml2:SubjectConfirmation>
+                </saml2:Subject>
+            </saml2:Assertion>
+        </wsse:Security>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <srv:singleSelectCustomerDataSFBRequest
+            xmlns:srv="http://www.technisys.net/cmm/services/singleSelectCustomerDataSFB/rq/v0.0">
+            <customer name="customer">
+                <identificationNumber>0801193801011</identificationNumber>
+                <identificationType>
+                    <originalCodes>originalCode=IDENTIDAD;</originalCodes>
+                    <mnemonic>IDENTIDAD</mnemonic>
+                    <shortDesc>Identidad</shortDesc>
+                    <longDesc>Identidad</longDesc>
+                </identificationType>
+            </customer>
+        </srv:singleSelectCustomerDataSFBRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+<NS1:Envelope
+    xmlns:NS1="http://www.w3.org/2003/05/soap-envelope">
+    <NS1:Header>
+        <NS2:metadata
+            xmlns:NS2="http://www.technisys.net/cmm/services/metadata/v2.0">
+            <serviceId>singleSelectCustomerDataSFB</serviceId>
+            <serviceVersion>0.0</serviceVersion>
+            <featureId>ROL@404</featureId>
+            <sessionId>0A6CC123480528AADEFDA09C2B3D1767</sessionId>
+            <organizationType>
+                <mnemonic translationError="UNDEFINED_TRANSLATION">PERSONAS</mnemonic>
+                <originalCodes>originalCode=PERSONAS;</originalCodes>
+            </organizationType>
+            <executingChannel>
+                <mnemonic>MB</mnemonic>
+                <originalCodes>originalCode=4;</originalCodes>
+                <shortDesc>Banca Mobile</shortDesc>
+                <longDesc>Banca Mobile</longDesc>
+            </executingChannel>
+            <executingOperatorId>uriTech=OPERADOR_EMPRESA@27971;uriSFB=IDENTIDAD#0801193801011;uriRules=IDENTIDAD#0801193801011</executingOperatorId>
+            <channelDispatchDate>20240726102319023</channelDispatchDate>
+            <organizationId>uriTech=EMPRESA@27960;uriSFB=IDENTIDAD#0801193801011;uriRules=IDENTIDAD#0801193801011</organizationId>
+            <organizationOperatorId>uriTech=OPERADOR_EMPRESA@27971;uriSFB=IDENTIDAD#0801193801011;uriRules=IDENTIDAD#0801193801011</organizationOperatorId>
+            <traceNumber>1829065.2266698</traceNumber>
+            <address>ip=10.20.20.20;</address>
+            <terminalId>Safari;604;en-US;Mac OS;America/Bogota;186.29.210.174;</terminalId>
+            <locale>es_HN</locale>
+            <branchId>1</branchId>
+            <customProperties/>
+            <internals>
+                <serviceRequestTimestamp>20240726112115300</serviceRequestTimestamp>
+                <serviceResponseTimestamp>20240726112116318</serviceResponseTimestamp>
+                <asynchronousDestinations/>
+            </internals>
+        </NS2:metadata>
+    </NS1:Header>
+    <NS1:Body>
+        <srv:singleSelectCustomerDataSFBResponse
+            xmlns:srv="http://www.technisys.net/cmm/services/singleSelectCustomerDataSFB/rs/v0.0">
+            <customer name="customer">
+                <additionDate>20181030134000000</additionDate>
+                <address>
+                    <country>
+                        <mnemonic translationError="UNDEFINED_TRANSLATION">HN</mnemonic>
+                        <originalCodes>originalCode=HN;</originalCodes>
+                    </country>
+                    <exactAddress>COL.ALAMEDA</exactAddress>
+                    <cantonEnum>
+                        <mnemonic translationError="UNDEFINED_TRANSLATION">01</mnemonic>
+                        <originalCodes>originalCode=01;</originalCodes>
+                    </cantonEnum>
+                    <districtEnum>
+                        <mnemonic translationError="UNDEFINED_TRANSLATION">TERCERA AVE.CASA-559</mnemonic>
+                        <originalCodes>originalCode=TERCERA AVE.CASA-559;</originalCodes>
+                    </districtEnum>
+                    <provinceEnum>
+                        <mnemonic translationError="UNDEFINED_TRANSLATION">08</mnemonic>
+                        <originalCodes>originalCode=08;</originalCodes>
+                    </provinceEnum>
+                </address>
+                <electronicsContact>
+                    <emailAddressComplete>yolandadefoster@yahoo.com</emailAddressComplete>
+                </electronicsContact>
+                <expiryDateCrmInfo>20181031000000000</expiryDateCrmInfo>
+                <identificationNumber>0801193801011</identificationNumber>
+                <identificationType>
+                    <country>
+                        <mnemonic translationError="UNDEFINED_TRANSLATION">Tegucigalpa</mnemonic>
+                        <originalCodes>originalCode=Tegucigalpa;</originalCodes>
+                    </country>
+                    <mnemonic>IDENTIDAD</mnemonic>
+                    <originalCodes>originalCode=0;</originalCodes>
+                    <shortDesc>Identidad</shortDesc>
+                    <longDesc>Identidad</longDesc>
+                </identificationType>
+                <incomeAmount>
+                    <incomeAmount>000000000010000000</incomeAmount>
+                </incomeAmount>
+                <maritalStatusType>
+                    <mnemonic translationError="UNDEFINED_TRANSLATION">S</mnemonic>
+                    <originalCodes>originalCode=S;</originalCodes>
+                </maritalStatusType>
+                <occupationCode>
+                    <mnemonic translationError="UNDEFINED_TRANSLATION">100</mnemonic>
+                    <originalCodes>originalCode=100;</originalCodes>
+                </occupationCode>
+                <occupationCodeDetail>
+                    <mnemonic translationError="UNDEFINED_TRANSLATION">SERVICIOS</mnemonic>
+                    <originalCodes>originalCode=SERVICIOS;</originalCodes>
+                </occupationCodeDetail>
+                <publicOfficial/>
+                <contactPhone>
+                    <customer>
+                        <contactWorkPhone>
+                            <phoneNumber>22325263</phoneNumber>
+                        </contactWorkPhone>
+                    </customer>
+                    <phoneNumber>22325263</phoneNumber>
+                </contactPhone>
+                <dependentsM>0000000000</dependentsM>
+                <institution>
+                    <customer>
+                        <firstName1>JOSE</firstName1>
+                        <identificationType>
+                            <mnemonic>IDENTIDAD</mnemonic>
+                            <originalCodes>originalCode=0;</originalCodes>
+                            <shortDesc>Identidad</shortDesc>
+                            <longDesc>Identidad</longDesc>
+                        </identificationType>
+                        <lastName1>CERRATO</lastName1>
+                        <identificationNumber>080117896547</identificationNumber>
+                    </customer>
+                    <country>
+                        <mnemonic translationError="UNDEFINED_TRANSLATION">HON</mnemonic>
+                        <originalCodes>originalCode=HON;</originalCodes>
+                    </country>
+                </institution>
+                <country>
+                    <mnemonic translationError="UNDEFINED_TRANSLATION">HN</mnemonic>
+                    <originalCodes>originalCode=HN;</originalCodes>
+                </country>
+                <externalAccountsTax/>
+                <publicFunctions/>
+                <specialPermitStay/>
+                <professionType>
+                    <mnemonic translationError="UNDEFINED_TRANSLATION">30</mnemonic>
+                    <originalCodes>originalCode=30;</originalCodes>
+                </professionType>
+                <contactMovilPhone>
+                    <areaCode>504</areaCode>
+                    <phoneNumber>99700095</phoneNumber>
+                </contactMovilPhone>
+                <crmInfo>0099</crmInfo>
+                <segmentChannel>9999</segmentChannel>
+            </customer>
+        </srv:singleSelectCustomerDataSFBResponse>
+    </NS1:Body>
+</NS1:Envelope>
+
+
+<!-- salvador dev -->
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:e="http://www.technisys.net/cmm/services/errors/v1.0"
+    xmlns:md="http://www.technisys.net/cmm/services/metadata/v2.0"
+    xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+    xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <SOAP-ENV:Header>
+        <md:metadata>
+            <traceNumber>1956710.2694814</traceNumber>
+            <serviceId>singleSelectCustomerDataSFB</serviceId>
+            <serviceVersion>0.0</serviceVersion>
+            <sessionId>001C28B0F0E3C2BD9137E007B90865D2</sessionId>
+            <targetChannel>
+                <mnemonic>MB</mnemonic>
+            </targetChannel>
+            <executingChannel>
+                <mnemonic>MB</mnemonic>
+            </executingChannel>
+            <address>ip=10.20.20.20;</address>
+            <sourceDate>20240726100444004</sourceDate>
+            <channelDispatchDate>20240726100444004</channelDispatchDate>
+            <locale>es_SV</locale>
+            <featureId>ROL@404</featureId>
+            <institutionType>UNDEFINED</institutionType>
+            <msgTypeId>200</msgTypeId>
+            <terminalId>browser=Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1;platform=;subChannel=;terminalCode=;</terminalId>
+            <organizationId>uriTech=EMPRESA@22941;uriSFB=DUI#00800952-9;uriRules=DUI#00800952-9</organizationId>
+            <organizationOperatorId>uriTech=OPERADOR_EMPRESA@22948;uriSFB=DUI#00800952-9;uriRules=DUI#00800952-9</organizationOperatorId>
+            <executingOperatorId>uriTech=OPERADOR_EMPRESA@22948;uriSFB=DUI#00800952-9;uriRules=DUI#00800952-9</executingOperatorId>
+            <paginationInfo/>
+            <branchId>1</branchId>
+            <userId/>
+            <parityCurrencyId/>
+            <localCurrencyId/>
+            <localCountryId/>
+            <bankId/>
+            <organizationType>
+                <mnemonic>PERSONAS</mnemonic>
+            </organizationType>
+            <internals>
+                <serviceRequestTimestamp>20240726110443551</serviceRequestTimestamp>
+            </internals>
+        </md:metadata>
+        <wsse:Security SOAP-ENV:mustUnderstand="true">
+            <saml2:Assertion
+                xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                   ID="_716685CF6D246B06E613983675276302"
+                                   IssueInstant="2014-04-24T19:25:27.630Z"
+                                   Version="2.0"
+                                   xsi:type="saml2:AssertionType">
+                <saml2:Issuer>CyberbankMultichannelManager</saml2:Issuer>
+                <saml2:Subject>
+                    <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">uriTech=OPERADOR_EMPRESA@22948;uriSFB=DUI#00800952-9;uriRules=DUI#00800952-9</saml2:NameID>
+                    <saml2:SubjectConfirmation Method="METODO_AUTENTICACION@3;uriSFB=USUARIO_CLAVE">
+                        <saml2:SubjectConfirmationData xsi:type="saml2:KeyInfoConfirmationDataType">
+                            <ds:KeyInfo
+                                xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                                <ds:KeyAlias>008009529</ds:KeyAlias>
+                                <KeyValue>xxxxxxxxxxxx</KeyValue>
+                            </ds:KeyInfo>
+                            <saml2:authenticationMethodSchema>uriTech=ESQUEMA_USER_PASSWORD@22943;uriSFB=USUARIO_CLAVE</saml2:authenticationMethodSchema>
+                        </saml2:SubjectConfirmationData>
+                    </saml2:SubjectConfirmation>
+                </saml2:Subject>
+            </saml2:Assertion>
+        </wsse:Security>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <srv:singleSelectCustomerDataSFBRequest
+            xmlns:srv="http://www.technisys.net/cmm/services/singleSelectCustomerDataSFB/rq/v0.0">
+            <customer name="customer">
+                <identificationNumber>00800952-9</identificationNumber>
+                <identificationType>
+                    <originalCodes>originalCode=DUI;</originalCodes>
+                    <mnemonic>DUI</mnemonic>
+                    <shortDesc>Documento único de identidad</shortDesc>
+                    <longDesc>Documento único de identidad</longDesc>
+                </identificationType>
+            </customer>
+        </srv:singleSelectCustomerDataSFBRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<NS1:Envelope
+    xmlns:NS1="http://www.w3.org/2003/05/soap-envelope">
+    <NS1:Header>
+        <NS2:metadata
+            xmlns:NS2="http://www.technisys.net/cmm/services/metadata/v2.0">
+            <serviceId>singleSelectCustomerDataSFB</serviceId>
+            <serviceVersion>0.0</serviceVersion>
+            <featureId>ROL@404</featureId>
+            <sessionId>001C28B0F0E3C2BD9137E007B90865D2</sessionId>
+            <organizationType>
+                <mnemonic translationError="UNDEFINED_TRANSLATION">PERSONAS</mnemonic>
+                <originalCodes>originalCode=PERSONAS;</originalCodes>
+            </organizationType>
+            <executingChannel>
+                <mnemonic>MB</mnemonic>
+                <originalCodes>originalCode=4;</originalCodes>
+                <shortDesc>Banca Mobile</shortDesc>
+                <longDesc>Banca Mobile</longDesc>
+            </executingChannel>
+            <executingOperatorId>uriTech=OPERADOR_EMPRESA@22948;uriSFB=DUI#00800952-9;uriRules=DUI#00800952-9</executingOperatorId>
+            <channelDispatchDate>20240726100444004</channelDispatchDate>
+            <organizationId>uriTech=EMPRESA@22941;uriSFB=DUI#00800952-9;uriRules=DUI#00800952-9</organizationId>
+            <organizationOperatorId>uriTech=OPERADOR_EMPRESA@22948;uriSFB=DUI#00800952-9;uriRules=DUI#00800952-9</organizationOperatorId>
+            <traceNumber>1956710.2694814</traceNumber>
+            <address>ip=10.20.20.20;</address>
+            <terminalId>browser=Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1;platform=;subChannel=;terminalCode=;</terminalId>
+            <locale>es_SV</locale>
+            <branchId>1</branchId>
+            <customProperties/>
+            <internals>
+                <serviceRequestTimestamp>20240726110443551</serviceRequestTimestamp>
+                <serviceResponseTimestamp>20240726110444172</serviceResponseTimestamp>
+                <asynchronousDestinations/>
+            </internals>
+        </NS2:metadata>
+    </NS1:Header>
+    <NS1:Body>
+        <srv:singleSelectCustomerDataSFBResponse
+            xmlns:srv="http://www.technisys.net/cmm/services/singleSelectCustomerDataSFB/rs/v0.0">
+            <customer name="customer">
+                <additionDate>20200911000000000</additionDate>
+                <address>
+                    <exactAddress>DIRECCIONA DIRECCIONB DIRECCIONC</exactAddress>
+                </address>
+                <electronicsContact>
+                    <emailAddressComplete>PRUEBA@DAVIVIENDA.COM.SV</emailAddressComplete>
+                </electronicsContact>
+                <expiryDateCrmInfo>20280910000000000</expiryDateCrmInfo>
+                <identificationNumber>008009529</identificationNumber>
+                <identificationType>
+                    <mnemonic>DUI</mnemonic>
+                    <originalCodes>originalCode=DUI;</originalCodes>
+                    <shortDesc>Documento único de identidad</shortDesc>
+                    <longDesc>Documento único de identidad</longDesc>
+                </identificationType>
+                <publicOfficial/>
+                <externalAccountsTax/>
+                <publicFunctions/>
+                <specialPermitStay/>
+                <contactMovilPhone>
+                    <phoneNumber>99999999000</phoneNumber>
+                    <areaCode>503</areaCode>
+                </contactMovilPhone>
+                <crmInfo>99</crmInfo>
+                <segmentChannel>1000</segmentChannel>
+            </customer>
+        </srv:singleSelectCustomerDataSFBResponse>
+    </NS1:Body>
+</NS1:Envelope>

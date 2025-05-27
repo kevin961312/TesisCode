@@ -1,0 +1,2556 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="385mm"
+   height="184mm"
+   viewBox="0 0 385 184"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   sodipodi:docname="Imagen150x250x1000x0.05x10.svg"
+   inkscape:export-filename="Imagen150x250x1000x0.05x10.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.63171046"
+     inkscape:cx="873.02654"
+     inkscape:cy="362.50785"
+     inkscape:window-width="1696"
+     inkscape:window-height="1027"
+     inkscape:window-x="234"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     showgrid="false" />
+  <defs
+     id="defs1">
+    <clipPath
+       id="cpNzIuMDB8NTA0LjAwfDcyLjAwfDQzMi4wMA==">
+      <rect
+         x="72"
+         y="72"
+         width="432"
+         height="360"
+         id="rect3" />
+    </clipPath>
+    <clipPath
+       id="clipPath1">
+      <rect
+         x="72"
+         y="72"
+         width="432"
+         height="360"
+         id="rect1" />
+    </clipPath>
+    <clipPath
+       id="cpMC4wMHw1MDQuMDB8MC4wMHw1MDQuMDA=-4">
+      <rect
+         x="0"
+         y="0"
+         width="504"
+         height="504"
+         id="rect2-3" />
+    </clipPath>
+    <clipPath
+       id="cpMC4wMHw1MDQuMDB8MC4wMHw1MDQuMDA=-4-7">
+      <rect
+         x="0"
+         y="0"
+         width="504"
+         height="504"
+         id="rect2-3-3" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter55"
+       x="-0.0011027466"
+       y="-0.013020834"
+       width="1.0022055"
+       height="1.0260417">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix55"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix102" />
+      <feColorMatrix
+         id="feColorMatrix103"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix150" />
+      <feColorMatrix
+         id="feColorMatrix151"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <clipPath
+       id="cpNzIuMDB8NTA0LjAwfDcyLjAwfDQzMi4wMA==-8">
+      <rect
+         x="72"
+         y="72"
+         width="432"
+         height="360"
+         id="rect3-6" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter32"
+       x="-0.11503087"
+       y="-0.0058347606"
+       width="1.2300617"
+       height="1.0116695">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix32"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix56" />
+      <feColorMatrix
+         id="feColorMatrix57"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix104" />
+      <feColorMatrix
+         id="feColorMatrix105"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter33"
+       x="-0.23437411"
+       y="-9.3729977"
+       width="1.4687482"
+       height="19.745995">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix33"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix58" />
+      <feColorMatrix
+         id="feColorMatrix59"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix106" />
+      <feColorMatrix
+         id="feColorMatrix107"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter34"
+       x="-0.055803561"
+       y="-0.13250946"
+       width="1.1116071"
+       height="1.2650189">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix34"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix60" />
+      <feColorMatrix
+         id="feColorMatrix61"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix108" />
+      <feColorMatrix
+         id="feColorMatrix109"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter35"
+       x="-0.048449674"
+       y="-0.078616533"
+       width="1.0968993"
+       height="1.1572331">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix35"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix62" />
+      <feColorMatrix
+         id="feColorMatrix63"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix110" />
+      <feColorMatrix
+         id="feColorMatrix111"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter36"
+       x="-0.014323915"
+       y="-0.048764614"
+       width="1.0286478"
+       height="1.0975292">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix36"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix64" />
+      <feColorMatrix
+         id="feColorMatrix65"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix112" />
+      <feColorMatrix
+         id="feColorMatrix113"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter37"
+       x="-0.0042277334"
+       y="-0.0053517905"
+       width="1.0084555"
+       height="1.0107036">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix37"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix66" />
+      <feColorMatrix
+         id="feColorMatrix67"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix114" />
+      <feColorMatrix
+         id="feColorMatrix115"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter38"
+       x="-0.011574065"
+       y="-0.0071866605"
+       width="1.0231481"
+       height="1.0143733">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix38"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix68" />
+      <feColorMatrix
+         id="feColorMatrix69"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix116" />
+      <feColorMatrix
+         id="feColorMatrix117"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter39"
+       x="-0.0075301223"
+       y="-0.007562009"
+       width="1.0150602"
+       height="1.015124">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix39"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix70" />
+      <feColorMatrix
+         id="feColorMatrix71"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix118" />
+      <feColorMatrix
+         id="feColorMatrix119"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter40"
+       x="-0.0082200798"
+       y="-0.18472918"
+       width="1.0164402"
+       height="1.3694584">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix40"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix72" />
+      <feColorMatrix
+         id="feColorMatrix73"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix120" />
+      <feColorMatrix
+         id="feColorMatrix121"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter41"
+       x="-0.014648451"
+       width="1.0292969"
+       y="-inf"
+       height="inf">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix41"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix74" />
+      <feColorMatrix
+         id="feColorMatrix75"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix122" />
+      <feColorMatrix
+         id="feColorMatrix123"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter42"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix42"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix76" />
+      <feColorMatrix
+         id="feColorMatrix77"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix124" />
+      <feColorMatrix
+         id="feColorMatrix125"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter43"
+       x="-0.069444443"
+       y="-0.069444443"
+       width="1.1388889"
+       height="1.1388889">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix43"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix78" />
+      <feColorMatrix
+         id="feColorMatrix79"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix126" />
+      <feColorMatrix
+         id="feColorMatrix127"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter44"
+       x="-0.069444443"
+       y="-0.069444443"
+       width="1.1388889"
+       height="1.1388889">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix44"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix80" />
+      <feColorMatrix
+         id="feColorMatrix81"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix128" />
+      <feColorMatrix
+         id="feColorMatrix129"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter45"
+       x="-0.069444443"
+       y="-0.069444443"
+       width="1.1388889"
+       height="1.1388889">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix45"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix82" />
+      <feColorMatrix
+         id="feColorMatrix83"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix130" />
+      <feColorMatrix
+         id="feColorMatrix131"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter46"
+       x="-0.069444443"
+       y="-0.069444443"
+       width="1.1388889"
+       height="1.1388889">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix46"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix84" />
+      <feColorMatrix
+         id="feColorMatrix85"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix132" />
+      <feColorMatrix
+         id="feColorMatrix133"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter47"
+       x="-0.069444443"
+       y="-0.069444443"
+       width="1.1388889"
+       height="1.1388889">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix47"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix86" />
+      <feColorMatrix
+         id="feColorMatrix87"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix134" />
+      <feColorMatrix
+         id="feColorMatrix135"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter48"
+       x="-0.069444443"
+       y="-0.069444443"
+       width="1.1388889"
+       height="1.1388889">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix48"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix88" />
+      <feColorMatrix
+         id="feColorMatrix89"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix136" />
+      <feColorMatrix
+         id="feColorMatrix137"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter49"
+       x="-0.069444443"
+       y="-0.069444443"
+       width="1.1388889"
+       height="1.1388889">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix49"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix90" />
+      <feColorMatrix
+         id="feColorMatrix91"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix138" />
+      <feColorMatrix
+         id="feColorMatrix139"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter50"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix50"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix92" />
+      <feColorMatrix
+         id="feColorMatrix93"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix140" />
+      <feColorMatrix
+         id="feColorMatrix141"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter51"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix51"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix94" />
+      <feColorMatrix
+         id="feColorMatrix95"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix142" />
+      <feColorMatrix
+         id="feColorMatrix143"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter52"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix52"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix96" />
+      <feColorMatrix
+         id="feColorMatrix97"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix144" />
+      <feColorMatrix
+         id="feColorMatrix145"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <clipPath
+       id="cpMC4wMHw1NzYuMDB8MC4wMHw1NzYuMDA=-71">
+      <rect
+         x="0"
+         y="0"
+         width="576"
+         height="576"
+         id="rect2-8" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter53"
+       x="0"
+       y="-0.00090391803"
+       width="1.0007703"
+       height="1.0009039">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix53"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix98" />
+      <feColorMatrix
+         id="feColorMatrix99"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix146" />
+      <feColorMatrix
+         id="feColorMatrix147"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <clipPath
+       id="clipPath2">
+      <rect
+         x="72"
+         y="72"
+         width="432"
+         height="360"
+         id="rect2" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Fade to Black or White"
+       id="filter54"
+       x="-0.00092067505"
+       y="-0.0011544414"
+       width="1.0018414"
+       height="1.002309">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         id="feColorMatrix54"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix100" />
+      <feColorMatrix
+         id="feColorMatrix101"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix148" />
+      <feColorMatrix
+         id="feColorMatrix149"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <clipPath
+       id="cpNzIuMDB8NTA0LjAwfDcyLjAwfDQzMi4wMA==-84">
+      <rect
+         x="72"
+         y="72"
+         width="432"
+         height="360"
+         id="rect3-0" />
+    </clipPath>
+    <clipPath
+       id="cpMC4wMHw1NzYuMDB8MC4wMHw1NzYuMDA=">
+      <rect
+         x="0"
+         y="0"
+         width="576"
+         height="576"
+         id="rect2-0" />
+    </clipPath>
+    <clipPath
+       id="clipPath1-6">
+      <rect
+         x="72"
+         y="72"
+         width="432"
+         height="360"
+         id="rect1-2" />
+    </clipPath>
+    <clipPath
+       id="cpNzIuMDB8NTA0LjAwfDcyLjAwfDQzMi4wMA==-84-3">
+      <rect
+         x="72"
+         y="72"
+         width="432"
+         height="360"
+         id="rect3-0-0" />
+    </clipPath>
+    <clipPath
+       id="cpMC4wMHw1NzYuMDB8MC4wMHw1NzYuMDA=-0">
+      <rect
+         x="0"
+         y="0"
+         width="576"
+         height="576"
+         id="rect2-0-3" />
+    </clipPath>
+    <clipPath
+       id="clipPath1-0">
+      <rect
+         x="72"
+         y="72"
+         width="432"
+         height="360"
+         id="rect1-1" />
+    </clipPath>
+    <clipPath
+       id="cpNzIuMDB8NTA0LjAwfDcyLjAwfDQzMi4wMA==-7">
+      <rect
+         x="72"
+         y="72"
+         width="432"
+         height="360"
+         id="rect3-9" />
+    </clipPath>
+    <clipPath
+       id="cpMC4wMHw1NzYuMDB8MC4wMHw1NzYuMDA=-02">
+      <rect
+         x="0"
+         y="0"
+         width="576"
+         height="576"
+         id="rect2-39" />
+    </clipPath>
+    <clipPath
+       id="clipPath1-9">
+      <rect
+         x="72"
+         y="72"
+         width="432"
+         height="360"
+         id="rect1-7" />
+    </clipPath>
+    <clipPath
+       id="cpNzIuMDB8NTA0LjAwfDcyLjAwfDQzMi4wMA==-7-3">
+      <rect
+         x="72"
+         y="72"
+         width="432"
+         height="360"
+         id="rect3-9-9" />
+    </clipPath>
+    <clipPath
+       id="cpMC4wMHw1NzYuMDB8MC4wMHw1NzYuMDA=-02-9">
+      <rect
+         x="0"
+         y="0"
+         width="576"
+         height="576"
+         id="rect2-39-9" />
+    </clipPath>
+    <clipPath
+       id="clipPath1-1">
+      <rect
+         x="72"
+         y="72"
+         width="432"
+         height="360"
+         id="rect1-72" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       clip-path="url(#cpMC4wMHw1MDQuMDB8MC4wMHw1MDQuMDA=-4)"
+       id="g100"
+       transform="matrix(0.35277777,0,0,0.35277777,15.932302,-5.3486974)">
+      <rect
+         x="81.970001"
+         y="475.20001"
+         width="340.06"
+         height="28.799999"
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="rect92" />
+      <line
+         x1="85.209999"
+         y1="489.60001"
+         x2="106.81"
+         y2="489.60001"
+         style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line92" />
+      <line
+         x1="168.88"
+         y1="489.60001"
+         x2="190.48"
+         y2="489.60001"
+         style="fill:none;stroke:#00ff00;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3"
+         id="line93" />
+      <line
+         x1="252.53999"
+         y1="489.60001"
+         x2="274.14001"
+         y2="489.60001"
+         style="fill:none;stroke:#0000ff;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3"
+         id="line94" />
+      <line
+         x1="336.20001"
+         y1="489.60001"
+         x2="357.79999"
+         y2="489.60001"
+         style="fill:none;stroke:#ffa500;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2"
+         id="line95" />
+      <circle
+         cx="96.010002"
+         cy="489.60001"
+         r="2.7"
+         style="fill:#ff0000;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="circle95" />
+      <polygon
+         points="179.68,485.4 183.31,491.7 176.04,491.7 "
+         style="fill:#00ff00;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon95-4" />
+      <polygon
+         points="263.34,486.9 266.04,489.6 263.34,492.3 260.64,489.6 "
+         style="fill:#0000ff;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon96-0" />
+      <polygon
+         points="349.7,492.3 349.7,486.9 344.3,486.9 344.3,492.3 "
+         style="fill:#ffa500;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon97" />
+      <text
+         x="117.61"
+         y="493.91"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="36"
+         lengthAdjust="spacingAndGlyphs"
+         id="text97">MRCD</text>
+      <text
+         x="201.28"
+         y="493.91"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="42"
+         lengthAdjust="spacingAndGlyphs"
+         id="text98">T2MOD</text>
+      <text
+         x="284.94"
+         y="493.91"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="48.02"
+         lengthAdjust="spacingAndGlyphs"
+         id="text99">EBADIUI</text>
+      <text
+         x="368.60001"
+         y="493.91"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="46.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text100">EBADIZI</text>
+    </g>
+    <g
+       id="g5"
+       transform="translate(-11.575388,-231.4664)">
+      <g
+         clip-path="url(#cpMC4wMHw1MDQuMDB8MC4wMHw1MDQuMDA=-4-7)"
+         id="g100-4"
+         transform="matrix(0.35277777,0,0,0.35277777,209.7331,226.00398)"
+         style="filter:url(#filter55)">
+        <g
+           id="g811">
+          <rect
+             x="81.970001"
+             y="475.20001"
+             width="340.06"
+             height="28.799999"
+             style="fill:#ffffff;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+             id="rect92-9" />
+          <line
+             x1="85.209999"
+             y1="489.60001"
+             x2="106.81"
+             y2="489.60001"
+             style="fill:#000000;fill-opacity:1;stroke:#000202;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+             id="line92-3" />
+          <line
+             x1="168.88"
+             y1="489.60001"
+             x2="190.48"
+             y2="489.60001"
+             style="fill:#000000;fill-opacity:0.8;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3;stroke-opacity:0.8"
+             id="line93-0" />
+          <line
+             x1="252.53999"
+             y1="489.60001"
+             x2="274.14001"
+             y2="489.60001"
+             style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3;stroke-opacity:0.8"
+             id="line94-5" />
+          <line
+             x1="336.20001"
+             y1="489.60001"
+             x2="357.79999"
+             y2="489.60001"
+             style="fill:#000000;fill-opacity:0.8;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2;stroke-opacity:0.8"
+             id="line95-2" />
+          <circle
+             cx="96.010002"
+             cy="489.60001"
+             r="2.7"
+             style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+             id="circle95-3" />
+          <polygon
+             points="183.31,491.7 176.04,491.7 179.68,485.4 "
+             style="fill:#000000;fill-opacity:0.8;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+             id="polygon95-4-8" />
+          <polygon
+             points="260.64,489.6 263.34,486.9 266.04,489.6 263.34,492.3 "
+             style="fill:#000000;fill-opacity:0.8;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+             id="polygon96-0-7" />
+          <polygon
+             points="344.3,492.3 349.7,492.3 349.7,486.9 344.3,486.9 "
+             style="fill:#000000;fill-opacity:0.8;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+             id="polygon97-8" />
+          <text
+             x="117.61"
+             y="493.91"
+             style="font-size:12px;font-family:Arial;white-space:pre"
+             textLength="36"
+             lengthAdjust="spacingAndGlyphs"
+             id="text97-0">MRCD</text>
+          <text
+             x="201.28"
+             y="493.91"
+             style="font-size:12px;font-family:Arial;white-space:pre"
+             textLength="42"
+             lengthAdjust="spacingAndGlyphs"
+             id="text98-4">T2MOD</text>
+          <text
+             x="284.94"
+             y="493.91"
+             style="font-size:12px;font-family:Arial;white-space:pre"
+             textLength="48.02"
+             lengthAdjust="spacingAndGlyphs"
+             id="text99-5">EBADIUI</text>
+          <text
+             x="368.60001"
+             y="493.91"
+             style="font-size:12px;font-family:Arial;white-space:pre"
+             textLength="46.68"
+             lengthAdjust="spacingAndGlyphs"
+             id="text100-7">EBADIZI</text>
+        </g>
+      </g>
+    </g>
+    <g
+       clip-path="url(#cpNzIuMDB8NTA0LjAwfDcyLjAwfDQzMi4wMA==-7)"
+       id="g22"
+       transform="matrix(0.35277777,0,0,0.35277777,5.694466,-16.425664)">
+      <line
+         x1="88.370003"
+         y1="395.01001"
+         x2="91.629997"
+         y2="331.29999"
+         style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line3" />
+      <line
+         x1="99.150002"
+         y1="323.26001"
+         x2="100.85"
+         y2="323.04999"
+         style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line4" />
+      <line
+         x1="114.97"
+         y1="320.39999"
+         x2="121.03"
+         y2="318.84"
+         style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line5" />
+      <line
+         x1="134.95"
+         y1="315.14999"
+         x2="141.05"
+         y2="313.48999"
+         style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line6" />
+      <line
+         x1="154.19"
+         y1="307.92001"
+         x2="181.81"
+         y2="291.51999"
+         style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line7" />
+      <line
+         x1="193.13"
+         y1="282.79001"
+         x2="282.87"
+         y2="194.42999"
+         style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line8" />
+      <line
+         x1="292.13"
+         y1="183.48"
+         x2="323.87"
+         y2="138.12"
+         style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line9" />
+      <line
+         x1="333.76001"
+         y1="127.9"
+         x2="382.23999"
+         y2="91.540001"
+         style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line10" />
+      <line
+         x1="395.20001"
+         y1="87"
+         x2="440.79999"
+         y2="85.559998"
+         style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line11" />
+      <line
+         x1="455.20001"
+         y1="85.330002"
+         x2="480.79999"
+         y2="85.330002"
+         style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line12" />
+      <circle
+         cx="88"
+         cy="402.20001"
+         r="2.7"
+         style="fill:#ff0000;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="circle12" />
+      <circle
+         cx="92"
+         cy="324.10999"
+         r="2.7"
+         style="fill:#ff0000;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="circle13" />
+      <circle
+         cx="108"
+         cy="322.20001"
+         r="2.7"
+         style="fill:#ff0000;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="circle14" />
+      <circle
+         cx="128"
+         cy="317.04001"
+         r="2.7"
+         style="fill:#ff0000;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="circle15" />
+      <circle
+         cx="148"
+         cy="311.60001"
+         r="2.7"
+         style="fill:#ff0000;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="circle16" />
+      <circle
+         cx="188"
+         cy="287.84"
+         r="2.7"
+         style="fill:#ff0000;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="circle17" />
+      <circle
+         cx="288"
+         cy="189.38"
+         r="2.7"
+         style="fill:#ff0000;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="circle18" />
+      <circle
+         cx="328"
+         cy="132.22"
+         r="2.7"
+         style="fill:#ff0000;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="circle19" />
+      <circle
+         cx="388"
+         cy="87.220001"
+         r="2.7"
+         style="fill:#ff0000;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="circle20" />
+      <circle
+         cx="448"
+         cy="85.330002"
+         r="2.7"
+         style="fill:#ff0000;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="circle21" />
+      <circle
+         cx="488"
+         cy="85.330002"
+         r="2.7"
+         style="fill:#ff0000;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="circle22" />
+    </g>
+    <g
+       clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHw1NzYuMDA=-02)"
+       id="g48"
+       transform="matrix(0.35277777,0,0,0.35277777,5.694466,-16.425664)">
+      <line
+         x1="88"
+         y1="432"
+         x2="457.31"
+         y2="432"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line22" />
+      <line
+         x1="88"
+         y1="432"
+         x2="88"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line23" />
+      <line
+         x1="149.55"
+         y1="432"
+         x2="149.55"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line24" />
+      <line
+         x1="211.10001"
+         y1="432"
+         x2="211.10001"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line25" />
+      <line
+         x1="272.64999"
+         y1="432"
+         x2="272.64999"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line26" />
+      <line
+         x1="334.20001"
+         y1="432"
+         x2="334.20001"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line27" />
+      <line
+         x1="395.76001"
+         y1="432"
+         x2="395.76001"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line28" />
+      <line
+         x1="457.31"
+         y1="432"
+         x2="457.31"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line29" />
+      <text
+         x="88"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="6.6700001"
+         lengthAdjust="spacingAndGlyphs"
+         id="text29">0</text>
+      <text
+         x="149.55"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="13.35"
+         lengthAdjust="spacingAndGlyphs"
+         id="text30">20</text>
+      <text
+         x="211.10001"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="13.35"
+         lengthAdjust="spacingAndGlyphs"
+         id="text31">40</text>
+      <text
+         x="272.64999"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="13.35"
+         lengthAdjust="spacingAndGlyphs"
+         id="text32">60</text>
+      <text
+         x="334.20001"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="13.35"
+         lengthAdjust="spacingAndGlyphs"
+         id="text33">80</text>
+      <text
+         x="395.76001"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="20.02"
+         lengthAdjust="spacingAndGlyphs"
+         id="text34">100</text>
+      <text
+         x="457.31"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="20.02"
+         lengthAdjust="spacingAndGlyphs"
+         id="text35">120</text>
+      <line
+         x1="72"
+         y1="418.67001"
+         x2="72"
+         y2="85.330002"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line35" />
+      <line
+         x1="72"
+         y1="418.67001"
+         x2="64.800003"
+         y2="418.67001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line36" />
+      <line
+         x1="72"
+         y1="352"
+         x2="64.800003"
+         y2="352"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line37" />
+      <line
+         x1="72"
+         y1="285.32999"
+         x2="64.800003"
+         y2="285.32999"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line38" />
+      <line
+         x1="72"
+         y1="218.67"
+         x2="64.800003"
+         y2="218.67"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line39" />
+      <line
+         x1="72"
+         y1="152"
+         x2="64.800003"
+         y2="152"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line40" />
+      <line
+         x1="72"
+         y1="85.330002"
+         x2="64.800003"
+         y2="85.330002"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line41" />
+      <text
+         transform="rotate(-90,236.695,181.975)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="16.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text41">0.0</text>
+      <text
+         transform="rotate(-90,203.36,148.64)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="16.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text42">0.2</text>
+      <text
+         transform="rotate(-90,170.025,115.305)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="16.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text43">0.4</text>
+      <text
+         transform="rotate(-90,136.695,81.975)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="16.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text44">0.6</text>
+      <text
+         transform="rotate(-90,103.36,48.64)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="16.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text45">0.8</text>
+      <text
+         transform="rotate(-90,70.025,15.305)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="16.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text46">1.0</text>
+      <polygon
+         points="72,72 72,432 504,432 504,72 "
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon46" />
+      <text
+         x="288"
+         y="486.72"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="68.040001"
+         lengthAdjust="spacingAndGlyphs"
+         id="text47">Delta Values</text>
+      <text
+         transform="rotate(-90,138.96,113.04)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="92.709999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text48">Signal Probability</text>
+    </g>
+    <g
+       clip-path="url(#cpNzIuMDB8NTA0LjAwfDcyLjAwfDQzMi4wMA==-7)"
+       id="g102"
+       transform="matrix(0.35277777,0,0,0.35277777,5.694466,-16.425664)">
+      <line
+         x1="99.190002"
+         y1="402.07999"
+         x2="100.81"
+         y2="402.01001"
+         style="fill:none;stroke:#00ff00;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3"
+         id="line48" />
+      <line
+         x1="115.18"
+         y1="401.23999"
+         x2="120.82"
+         y2="400.85001"
+         style="fill:none;stroke:#00ff00;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3"
+         id="line49" />
+      <line
+         x1="135.02"
+         y1="398.76001"
+         x2="140.98"
+         y2="397.41"
+         style="fill:none;stroke:#00ff00;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3"
+         id="line50" />
+      <line
+         x1="154.7"
+         y1="393.17999"
+         x2="181.3"
+         y2="382.70999"
+         style="fill:none;stroke:#00ff00;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3"
+         id="line51" />
+      <line
+         x1="192"
+         y1="374.07999"
+         x2="284"
+         y2="236.5"
+         style="fill:none;stroke:#00ff00;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3"
+         id="line52" />
+      <line
+         x1="291"
+         y1="223.96001"
+         x2="325"
+         y2="149.7"
+         style="fill:none;stroke:#00ff00;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3"
+         id="line53" />
+      <line
+         x1="333.31"
+         y1="138.28999"
+         x2="382.69"
+         y2="93.110001"
+         style="fill:none;stroke:#00ff00;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3"
+         id="line54" />
+      <line
+         x1="395.19"
+         y1="87.900002"
+         x2="440.81"
+         y2="85.68"
+         style="fill:none;stroke:#00ff00;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3"
+         id="line55" />
+      <line
+         x1="455.20001"
+         y1="85.330002"
+         x2="480.79999"
+         y2="85.330002"
+         style="fill:none;stroke:#00ff00;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3"
+         id="line56" />
+      <polygon
+         points="91.64,404.23 84.36,404.23 88,397.93 "
+         style="fill:#00ff00;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon56" />
+      <polygon
+         points="95.64,404.45 88.36,404.45 92,398.16 "
+         style="fill:#00ff00;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon57" />
+      <polygon
+         points="111.64,403.83 104.36,403.83 108,397.53 "
+         style="fill:#00ff00;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon58" />
+      <polygon
+         points="131.64,402.45 124.36,402.45 128,396.16 "
+         style="fill:#00ff00;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon59" />
+      <polygon
+         points="151.64,397.92 144.36,397.92 148,391.62 "
+         style="fill:#00ff00;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon60" />
+      <polygon
+         points="191.64,382.17 184.36,382.17 188,375.87 "
+         style="fill:#00ff00;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon61" />
+      <polygon
+         points="291.64,232.61 284.36,232.61 288,226.31 "
+         style="fill:#00ff00;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon62" />
+      <polygon
+         points="331.64,145.25 324.36,145.25 328,138.96 "
+         style="fill:#00ff00;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon63" />
+      <polygon
+         points="391.64,90.34 384.36,90.34 388,84.05 "
+         style="fill:#00ff00;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon64" />
+      <polygon
+         points="451.64,87.43 444.36,87.43 448,81.13 "
+         style="fill:#00ff00;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon65" />
+      <polygon
+         points="491.64,87.43 484.36,87.43 488,81.13 "
+         style="fill:#00ff00;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon66" />
+      <line
+         x1="99.029999"
+         y1="399.45999"
+         x2="100.97"
+         y2="399.03"
+         style="fill:none;stroke:#0000ff;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3"
+         id="line66" />
+      <line
+         x1="114.71"
+         y1="394.85001"
+         x2="121.29"
+         y2="392.28"
+         style="fill:none;stroke:#0000ff;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3"
+         id="line67" />
+      <line
+         x1="134.7"
+         y1="387.01999"
+         x2="141.3"
+         y2="384.39999"
+         style="fill:none;stroke:#0000ff;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3"
+         id="line68" />
+      <line
+         x1="153.92999"
+         y1="377.67001"
+         x2="182.07001"
+         y2="358.23999"
+         style="fill:none;stroke:#0000ff;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3"
+         id="line69" />
+      <line
+         x1="191.55"
+         y1="347.89001"
+         x2="284.45001"
+         y2="184.11"
+         style="fill:none;stroke:#0000ff;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3"
+         id="line70" />
+      <line
+         x1="291.76999"
+         y1="171.71001"
+         x2="324.23001"
+         y2="118.98"
+         style="fill:none;stroke:#0000ff;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3"
+         id="line71" />
+      <line
+         x1="334.57001"
+         y1="109.9"
+         x2="381.42999"
+         y2="88.940002"
+         style="fill:none;stroke:#0000ff;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3"
+         id="line72" />
+      <line
+         x1="395.20001"
+         y1="85.919998"
+         x2="440.79999"
+         y2="85.43"
+         style="fill:none;stroke:#0000ff;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3"
+         id="line73" />
+      <line
+         x1="455.20001"
+         y1="85.349998"
+         x2="480.79999"
+         y2="85.339996"
+         style="fill:none;stroke:#0000ff;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3"
+         id="line74" />
+      <polygon
+         points="88,404.6 85.3,401.9 88,399.2 90.7,401.9 "
+         style="fill:#0000ff;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon74" />
+      <polygon
+         points="92,403.72 89.3,401.02 92,398.32 94.7,401.02 "
+         style="fill:#0000ff;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon75" />
+      <polygon
+         points="108,400.17 105.3,397.47 108,394.77 110.7,397.47 "
+         style="fill:#0000ff;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon76" />
+      <polygon
+         points="128,392.37 125.3,389.67 128,386.97 130.7,389.67 "
+         style="fill:#0000ff;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon77" />
+      <polygon
+         points="148,384.46 145.3,381.76 148,379.06 150.7,381.76 "
+         style="fill:#0000ff;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon78" />
+      <polygon
+         points="188,356.86 185.3,354.16 188,351.46 190.7,354.16 "
+         style="fill:#0000ff;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon79" />
+      <polygon
+         points="288,180.54 285.3,177.84 288,175.14 290.7,177.84 "
+         style="fill:#0000ff;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon80" />
+      <polygon
+         points="328,115.54 325.3,112.84 328,110.14 330.7,112.84 "
+         style="fill:#0000ff;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon81" />
+      <polygon
+         points="388,88.7 385.3,86 388,83.3 390.7,86 "
+         style="fill:#0000ff;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon82" />
+      <polygon
+         points="448,88.06 445.3,85.36 448,82.66 450.7,85.36 "
+         style="fill:#0000ff;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon83" />
+      <polygon
+         points="488,88.03 485.3,85.33 488,82.63 490.7,85.33 "
+         style="fill:#0000ff;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon84" />
+      <line
+         x1="98.959999"
+         y1="398.45999"
+         x2="101.04"
+         y2="397.89999"
+         style="fill:none;stroke:#ffa500;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2"
+         id="line84" />
+      <line
+         x1="115.01"
+         y1="394.39001"
+         x2="120.99"
+         y2="392.98001"
+         style="fill:none;stroke:#ffa500;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2"
+         id="line85" />
+      <line
+         x1="134.46001"
+         y1="388.14999"
+         x2="141.53999"
+         y2="384.64999"
+         style="fill:none;stroke:#ffa500;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2"
+         id="line86" />
+      <line
+         x1="153.89"
+         y1="377.32999"
+         x2="182.11"
+         y2="357.5"
+         style="fill:none;stroke:#ffa500;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2"
+         id="line87" />
+      <line
+         x1="191.57001"
+         y1="347.10001"
+         x2="284.42999"
+         y2="184.56"
+         style="fill:none;stroke:#ffa500;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2"
+         id="line88" />
+      <line
+         x1="291.78"
+         y1="172.17999"
+         x2="324.22"
+         y2="119.55"
+         style="fill:none;stroke:#ffa500;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2"
+         id="line89" />
+      <line
+         x1="334.57001"
+         y1="110.47"
+         x2="381.42999"
+         y2="89.379997"
+         style="fill:none;stroke:#ffa500;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2"
+         id="line90" />
+      <line
+         x1="395.20001"
+         y1="86.290001"
+         x2="440.79999"
+         y2="85.459999"
+         style="fill:none;stroke:#ffa500;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2"
+         id="line91" />
+      <line
+         x1="455.20001"
+         y1="85.330002"
+         x2="480.79999"
+         y2="85.330002"
+         style="fill:none;stroke:#ffa500;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2"
+         id="line92-39" />
+      <polygon
+         points="85.3,399.3 85.3,404.7 90.7,404.7 90.7,399.3 "
+         style="fill:#ffa500;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon92" />
+      <polygon
+         points="89.3,397.61 89.3,403.01 94.7,403.01 94.7,397.61 "
+         style="fill:#ffa500;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon93" />
+      <polygon
+         points="105.3,393.34 105.3,398.74 110.7,398.74 110.7,393.34 "
+         style="fill:#ffa500;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon94" />
+      <polygon
+         points="125.3,388.63 125.3,394.03 130.7,394.03 130.7,388.63 "
+         style="fill:#ffa500;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon95" />
+      <polygon
+         points="145.3,378.77 145.3,384.17 150.7,384.17 150.7,378.77 "
+         style="fill:#ffa500;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon96" />
+      <polygon
+         points="185.3,350.66 185.3,356.06 190.7,356.06 190.7,350.66 "
+         style="fill:#ffa500;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon97-86" />
+      <polygon
+         points="285.3,175.61 285.3,181.01 290.7,181.01 290.7,175.61 "
+         style="fill:#ffa500;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon98" />
+      <polygon
+         points="325.3,110.72 325.3,116.12 330.7,116.12 330.7,110.72 "
+         style="fill:#ffa500;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon99" />
+      <polygon
+         points="385.3,83.72 385.3,89.12 390.7,89.12 390.7,83.72 "
+         style="fill:#ffa500;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon100" />
+      <polygon
+         points="445.3,82.63 445.3,88.03 450.7,88.03 450.7,82.63 "
+         style="fill:#ffa500;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon101" />
+      <polygon
+         points="485.3,82.63 485.3,88.03 490.7,88.03 490.7,82.63 "
+         style="fill:#ffa500;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon102" />
+    </g>
+    <g
+       clip-path="url(#cpNzIuMDB8NTA0LjAwfDcyLjAwfDQzMi4wMA==-7-3)"
+       id="g22-6"
+       transform="matrix(0.35277777,0,0,0.35277777,187.22932,-16.833949)"
+       style="stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1">
+      <line
+         x1="88.370003"
+         y1="395.01001"
+         x2="91.629997"
+         y2="331.29999"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="line3-5" />
+      <line
+         x1="99.150002"
+         y1="323.26001"
+         x2="100.85"
+         y2="323.04999"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="line4-5" />
+      <line
+         x1="114.97"
+         y1="320.39999"
+         x2="121.03"
+         y2="318.84"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="line5-8" />
+      <line
+         x1="134.95"
+         y1="315.14999"
+         x2="141.05"
+         y2="313.48999"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="line6-1" />
+      <line
+         x1="154.19"
+         y1="307.92001"
+         x2="181.81"
+         y2="291.51999"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="line7-4" />
+      <line
+         x1="193.13"
+         y1="282.79001"
+         x2="282.87"
+         y2="194.42999"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="line8-7" />
+      <line
+         x1="292.13"
+         y1="183.48"
+         x2="323.87"
+         y2="138.12"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="line9-1" />
+      <line
+         x1="333.76001"
+         y1="127.9"
+         x2="382.23999"
+         y2="91.540001"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="line10-3" />
+      <line
+         x1="395.20001"
+         y1="87"
+         x2="440.79999"
+         y2="85.559998"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="line11-8" />
+      <line
+         x1="455.20001"
+         y1="85.330002"
+         x2="480.79999"
+         y2="85.330002"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="line12-4" />
+      <circle
+         cx="88"
+         cy="402.20001"
+         r="2.7"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="circle12-8" />
+      <circle
+         cx="92"
+         cy="324.10999"
+         r="2.7"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="circle13-0" />
+      <circle
+         cx="108"
+         cy="322.20001"
+         r="2.7"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="circle14-4" />
+      <circle
+         cx="128"
+         cy="317.04001"
+         r="2.7"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="circle15-6" />
+      <circle
+         cx="148"
+         cy="311.60001"
+         r="2.7"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="circle16-0" />
+      <circle
+         cx="188"
+         cy="287.84"
+         r="2.7"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="circle17-3" />
+      <circle
+         cx="288"
+         cy="189.38"
+         r="2.7"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="circle18-2" />
+      <circle
+         cx="328"
+         cy="132.22"
+         r="2.7"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="circle19-6" />
+      <circle
+         cx="388"
+         cy="87.220001"
+         r="2.7"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="circle20-9" />
+      <circle
+         cx="448"
+         cy="85.330002"
+         r="2.7"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="circle21-4" />
+      <circle
+         cx="488"
+         cy="85.330002"
+         r="2.7"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;fill-opacity:1"
+         id="circle22-1" />
+    </g>
+    <g
+       clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHw1NzYuMDA=-02-9)"
+       id="g48-3"
+       transform="matrix(0.35277777,0,0,0.35277777,187.22932,-16.833949)">
+      <line
+         x1="88"
+         y1="432"
+         x2="457.31"
+         y2="432"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line22-7" />
+      <line
+         x1="88"
+         y1="432"
+         x2="88"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line23-8" />
+      <line
+         x1="149.55"
+         y1="432"
+         x2="149.55"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line24-8" />
+      <line
+         x1="211.10001"
+         y1="432"
+         x2="211.10001"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line25-3" />
+      <line
+         x1="272.64999"
+         y1="432"
+         x2="272.64999"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line26-8" />
+      <line
+         x1="334.20001"
+         y1="432"
+         x2="334.20001"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line27-1" />
+      <line
+         x1="395.76001"
+         y1="432"
+         x2="395.76001"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line28-5" />
+      <line
+         x1="457.31"
+         y1="432"
+         x2="457.31"
+         y2="439.20001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line29-3" />
+      <text
+         x="88"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="6.6700001"
+         lengthAdjust="spacingAndGlyphs"
+         id="text29-5">0</text>
+      <text
+         x="149.55"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="13.35"
+         lengthAdjust="spacingAndGlyphs"
+         id="text30-4">20</text>
+      <text
+         x="211.10001"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="13.35"
+         lengthAdjust="spacingAndGlyphs"
+         id="text31-3">40</text>
+      <text
+         x="272.64999"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="13.35"
+         lengthAdjust="spacingAndGlyphs"
+         id="text32-6">60</text>
+      <text
+         x="334.20001"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="13.35"
+         lengthAdjust="spacingAndGlyphs"
+         id="text33-5">80</text>
+      <text
+         x="395.76001"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="20.02"
+         lengthAdjust="spacingAndGlyphs"
+         id="text34-9">100</text>
+      <text
+         x="457.31"
+         y="457.92001"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="20.02"
+         lengthAdjust="spacingAndGlyphs"
+         id="text35-5">120</text>
+      <line
+         x1="72"
+         y1="418.67001"
+         x2="72"
+         y2="85.330002"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line35-4" />
+      <line
+         x1="72"
+         y1="418.67001"
+         x2="64.800003"
+         y2="418.67001"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line36-9" />
+      <line
+         x1="72"
+         y1="352"
+         x2="64.800003"
+         y2="352"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line37-1" />
+      <line
+         x1="72"
+         y1="285.32999"
+         x2="64.800003"
+         y2="285.32999"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line38-7" />
+      <line
+         x1="72"
+         y1="218.67"
+         x2="64.800003"
+         y2="218.67"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line39-5" />
+      <line
+         x1="72"
+         y1="152"
+         x2="64.800003"
+         y2="152"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line40-5" />
+      <line
+         x1="72"
+         y1="85.330002"
+         x2="64.800003"
+         y2="85.330002"
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="line41-4" />
+      <text
+         transform="rotate(-90,236.695,181.975)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="16.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text41-1">0.0</text>
+      <text
+         transform="rotate(-90,203.36,148.64)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="16.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text42-8">0.2</text>
+      <text
+         transform="rotate(-90,170.025,115.305)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="16.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text43-8">0.4</text>
+      <text
+         transform="rotate(-90,136.695,81.975)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="16.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text44-3">0.6</text>
+      <text
+         transform="rotate(-90,103.36,48.64)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="16.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text45-5">0.8</text>
+      <text
+         transform="rotate(-90,70.025,15.305)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="16.68"
+         lengthAdjust="spacingAndGlyphs"
+         id="text46-2">1.0</text>
+      <polygon
+         points="504,72 72,72 72,432 504,432 "
+         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+         id="polygon46-2" />
+      <text
+         x="288"
+         y="486.72"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="68.040001"
+         lengthAdjust="spacingAndGlyphs"
+         id="text47-6">Delta Values</text>
+      <text
+         transform="rotate(-90,138.96,113.04)"
+         text-anchor="middle"
+         style="font-size:12px;font-family:Arial;white-space:pre"
+         textLength="92.709999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text48-6">Signal Probability</text>
+    </g>
+    <g
+       clip-path="url(#cpNzIuMDB8NTA0LjAwfDcyLjAwfDQzMi4wMA==-7-3)"
+       id="g102-7"
+       transform="matrix(0.35277777,0,0,0.35277777,187.22932,-16.833949)"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+      <line
+         x1="99.190002"
+         y1="402.07999"
+         x2="100.81"
+         y2="402.01001"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3;fill-opacity:1;stroke-opacity:1"
+         id="line48-8" />
+      <line
+         x1="115.18"
+         y1="401.23999"
+         x2="120.82"
+         y2="400.85001"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3;fill-opacity:1;stroke-opacity:1"
+         id="line49-4" />
+      <line
+         x1="135.02"
+         y1="398.76001"
+         x2="140.98"
+         y2="397.41"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3;fill-opacity:1;stroke-opacity:1"
+         id="line50-1" />
+      <line
+         x1="154.7"
+         y1="393.17999"
+         x2="181.3"
+         y2="382.70999"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3;fill-opacity:1;stroke-opacity:1"
+         id="line51-7" />
+      <line
+         x1="192"
+         y1="374.07999"
+         x2="284"
+         y2="236.5"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3;fill-opacity:1;stroke-opacity:1"
+         id="line52-1" />
+      <line
+         x1="291"
+         y1="223.96001"
+         x2="325"
+         y2="149.7"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3;fill-opacity:1;stroke-opacity:1"
+         id="line53-8" />
+      <line
+         x1="333.31"
+         y1="138.28999"
+         x2="382.69"
+         y2="93.110001"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3;fill-opacity:1;stroke-opacity:1"
+         id="line54-7" />
+      <line
+         x1="395.19"
+         y1="87.900002"
+         x2="440.81"
+         y2="85.68"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3;fill-opacity:1;stroke-opacity:1"
+         id="line55-8" />
+      <line
+         x1="455.20001"
+         y1="85.330002"
+         x2="480.79999"
+         y2="85.330002"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1, 3, 4, 3;fill-opacity:1;stroke-opacity:1"
+         id="line56-7" />
+      <polygon
+         points="84.36,404.23 88,397.93 91.64,404.23 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon56-7" />
+      <polygon
+         points="88.36,404.45 92,398.16 95.64,404.45 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon57-4" />
+      <polygon
+         points="104.36,403.83 108,397.53 111.64,403.83 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon58-4" />
+      <polygon
+         points="124.36,402.45 128,396.16 131.64,402.45 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon59-9" />
+      <polygon
+         points="144.36,397.92 148,391.62 151.64,397.92 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon60-1" />
+      <polygon
+         points="184.36,382.17 188,375.87 191.64,382.17 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon61-5" />
+      <polygon
+         points="284.36,232.61 288,226.31 291.64,232.61 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon62-5" />
+      <polygon
+         points="324.36,145.25 328,138.96 331.64,145.25 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon63-5" />
+      <polygon
+         points="384.36,90.34 388,84.05 391.64,90.34 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon64-8" />
+      <polygon
+         points="444.36,87.43 448,81.13 451.64,87.43 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon65-2" />
+      <polygon
+         points="484.36,87.43 488,81.13 491.64,87.43 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon66-9" />
+      <line
+         x1="99.029999"
+         y1="399.45999"
+         x2="100.97"
+         y2="399.03"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3;fill-opacity:1;stroke-opacity:1"
+         id="line66-8" />
+      <line
+         x1="114.71"
+         y1="394.85001"
+         x2="121.29"
+         y2="392.28"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3;fill-opacity:1;stroke-opacity:1"
+         id="line67-2" />
+      <line
+         x1="134.7"
+         y1="387.01999"
+         x2="141.3"
+         y2="384.39999"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3;fill-opacity:1;stroke-opacity:1"
+         id="line68-0" />
+      <line
+         x1="153.92999"
+         y1="377.67001"
+         x2="182.07001"
+         y2="358.23999"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3;fill-opacity:1;stroke-opacity:1"
+         id="line69-7" />
+      <line
+         x1="191.55"
+         y1="347.89001"
+         x2="284.45001"
+         y2="184.11"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3;fill-opacity:1;stroke-opacity:1"
+         id="line70-4" />
+      <line
+         x1="291.76999"
+         y1="171.71001"
+         x2="324.23001"
+         y2="118.98"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3;fill-opacity:1;stroke-opacity:1"
+         id="line71-8" />
+      <line
+         x1="334.57001"
+         y1="109.9"
+         x2="381.42999"
+         y2="88.940002"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3;fill-opacity:1;stroke-opacity:1"
+         id="line72-5" />
+      <line
+         x1="395.20001"
+         y1="85.919998"
+         x2="440.79999"
+         y2="85.43"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3;fill-opacity:1;stroke-opacity:1"
+         id="line73-8" />
+      <line
+         x1="455.20001"
+         y1="85.349998"
+         x2="480.79999"
+         y2="85.339996"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7, 3;fill-opacity:1;stroke-opacity:1"
+         id="line74-3" />
+      <polygon
+         points="90.7,401.9 88,404.6 85.3,401.9 88,399.2 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon74-0" />
+      <polygon
+         points="94.7,401.02 92,403.72 89.3,401.02 92,398.32 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon75-6" />
+      <polygon
+         points="110.7,397.47 108,400.17 105.3,397.47 108,394.77 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon76-2" />
+      <polygon
+         points="130.7,389.67 128,392.37 125.3,389.67 128,386.97 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon77-2" />
+      <polygon
+         points="150.7,381.76 148,384.46 145.3,381.76 148,379.06 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon78-5" />
+      <polygon
+         points="190.7,354.16 188,356.86 185.3,354.16 188,351.46 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon79-2" />
+      <polygon
+         points="290.7,177.84 288,180.54 285.3,177.84 288,175.14 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon80-2" />
+      <polygon
+         points="330.7,112.84 328,115.54 325.3,112.84 328,110.14 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon81-7" />
+      <polygon
+         points="390.7,86 388,88.7 385.3,86 388,83.3 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon82-1" />
+      <polygon
+         points="450.7,85.36 448,88.06 445.3,85.36 448,82.66 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon83-5" />
+      <polygon
+         points="490.7,85.33 488,88.03 485.3,85.33 488,82.63 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon84-2" />
+      <line
+         x1="98.959999"
+         y1="398.45999"
+         x2="101.04"
+         y2="397.89999"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2;fill-opacity:1;stroke-opacity:1"
+         id="line84-1" />
+      <line
+         x1="115.01"
+         y1="394.39001"
+         x2="120.99"
+         y2="392.98001"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2;fill-opacity:1;stroke-opacity:1"
+         id="line85-1" />
+      <line
+         x1="134.46001"
+         y1="388.14999"
+         x2="141.53999"
+         y2="384.64999"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2;fill-opacity:1;stroke-opacity:1"
+         id="line86-0" />
+      <line
+         x1="153.89"
+         y1="377.32999"
+         x2="182.11"
+         y2="357.5"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2;fill-opacity:1;stroke-opacity:1"
+         id="line87-1" />
+      <line
+         x1="191.57001"
+         y1="347.10001"
+         x2="284.42999"
+         y2="184.56"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2;fill-opacity:1;stroke-opacity:1"
+         id="line88-8" />
+      <line
+         x1="291.78"
+         y1="172.17999"
+         x2="324.22"
+         y2="119.55"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2;fill-opacity:1;stroke-opacity:1"
+         id="line89-7" />
+      <line
+         x1="334.57001"
+         y1="110.47"
+         x2="381.42999"
+         y2="89.379997"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2;fill-opacity:1;stroke-opacity:1"
+         id="line90-6" />
+      <line
+         x1="395.20001"
+         y1="86.290001"
+         x2="440.79999"
+         y2="85.459999"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2;fill-opacity:1;stroke-opacity:1"
+         id="line91-0" />
+      <line
+         x1="455.20001"
+         y1="85.330002"
+         x2="480.79999"
+         y2="85.330002"
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2, 2, 6, 2;fill-opacity:1;stroke-opacity:1"
+         id="line92-39-0" />
+      <polygon
+         points="90.7,399.3 85.3,399.3 85.3,404.7 90.7,404.7 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon92-9" />
+      <polygon
+         points="94.7,397.61 89.3,397.61 89.3,403.01 94.7,403.01 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon93-5" />
+      <polygon
+         points="110.7,393.34 105.3,393.34 105.3,398.74 110.7,398.74 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon94-6" />
+      <polygon
+         points="130.7,388.63 125.3,388.63 125.3,394.03 130.7,394.03 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon95-2" />
+      <polygon
+         points="150.7,378.77 145.3,378.77 145.3,384.17 150.7,384.17 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon96-8" />
+      <polygon
+         points="190.7,350.66 185.3,350.66 185.3,356.06 190.7,356.06 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon97-86-5" />
+      <polygon
+         points="290.7,175.61 285.3,175.61 285.3,181.01 290.7,181.01 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon98-9" />
+      <polygon
+         points="330.7,110.72 325.3,110.72 325.3,116.12 330.7,116.12 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon99-4" />
+      <polygon
+         points="390.7,83.72 385.3,83.72 385.3,89.12 390.7,89.12 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon100-3" />
+      <polygon
+         points="450.7,82.63 445.3,82.63 445.3,88.03 450.7,88.03 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon101-9" />
+      <polygon
+         points="490.7,82.63 485.3,82.63 485.3,88.03 490.7,88.03 "
+         style="fill:#000000;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;fill-opacity:1;stroke-opacity:1"
+         id="polygon102-0" />
+    </g>
+  </g>
+</svg>

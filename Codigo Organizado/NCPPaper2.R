@@ -6,10 +6,116 @@ library(rrcov)
 library(EnvStats)
 library(randcorr)
 library(KernSmooth)
+library(psych)
+library(expm)
+library(Rfast)
 
 set.seed(123)
 
-SimulationT2MRCDChart = function (observation, numVariables, numSimulation, meanVector, sigmaMatriz, alphaMRCD = 0.75 )
+
+AlgorithmRoMDP <- function(DataSet, itertime = 100)
+{
+  # Dimensión del conjuto de datos
+  SampleNumber <- dim(DataSet)[1]
+  VariableNumber <- dim(DataSet)[2]
+  MiddlePoint <- round(SampleNumber/2)+1
+  TransposedDataSet <-t(DataSet)
+  
+  ValueInitialSubsets <- 2
+  BestDet <- 0
+  VecZero <- numeric(SampleNumber)
+  
+  #Ciclo de iteracciones por default 100
+  for ( iter in 1:itertime)
+  {
+    Id <- sample(SampleNumber, ValueInitialSubsets, replace = FALSE)
+    SubsetById <- DataSet[Id,]
+    MuSubsetById <- Rfast::colmeans(SubsetById)
+    VarSubsetById <- Rfast::colVars(SubsetById)
+    Sama <- (TransposedDataSet-MuSubsetById)/VarSubsetById
+    Distance <- Rfast::colsums(Sama)
+    Criterio <- 10
+    Count <- 0
+    while (Criterio !=0 & Count <= 15)
+    {
+      Count <- Count + 1
+      VectorZeroi <- numeric(SampleNumber)
+      DistancePerm <- order(Distance)
+      VectorZeroi[ DistancePerm[1:MiddlePoint] ] <- 1
+      Criterio <- sum( abs(VectorZeroi - VecZero) )
+      VecZero <- VectorZeroi
+      NewDataSet <- DataSet[DistancePerm[1:MiddlePoint], ]
+      MuSubsetById <- Rfast::colmeans(NewDataSet)
+      VarSubsetById <- Rfast::colVars(NewDataSet)
+      Sama <- (TransposedDataSet-MuSubsetById)/VarSubsetById
+      Distance <- Rfast::colsums(Sama)
+    }
+    TempDet <- prod(VarSubsetById)
+    if(BestDet == 0 | TempDet < BestDet) 
+    {
+      BestDet <- TempDet
+      FinalVec <- VecZero
+    }
+  }
+  SubMCD <- (1:SampleNumber)[FinalVec != 0]
+  
+  MuSubsetById <- Rfast::colmeans( DataSet[SubMCD, ] )
+  VarSubsetById <- Rfast::colVars( DataSet[SubMCD, ] )
+  Sigma <- cov(DataSet[SubMCD, ])
+  return(list(MuSubsetById, VarSubsetById, Sigma, SubMCD))
+}
+
+
+AlgorithmMDPCFPart1 <- function(DatesNorm, NumVariable, Observations, Alpha = 0.05, outliersData = c(), OutliersFlag = FALSE )
+{
+  MiddlePoint <- floor(Observations/2)+1
+  AlgorithmObjects <- AlgorithmRoMDP(DatesNorm)
+  #calculo de Media y matrices de correlacion y de varianza
+  MeanDMP <-unlist(AlgorithmObjects[1])    
+  SigmaDMP <- matrix(diag(as.numeric(unlist(AlgorithmObjects[2]))),ncol = NumVariable)
+  InverseSigmaDMP <- solve(SigmaDMP)
+  SigmaOfMinimunDet <- AlgorithmObjects[3][[1]]
+  CorMatrix <- sqrt(InverseSigmaDMP)%*%SigmaOfMinimunDet%*%sqrt(InverseSigmaDMP)
+  
+  # Estimacion objetos algoritmo Ebadi
+  TraceRhoSquare <- tr(CorMatrix %^% 2) - (NumVariable**2)/MiddlePoint
+  TraceRhoCubic  <- tr(CorMatrix %^% 3) - ((3*NumVariable)/MiddlePoint)*tr(CorMatrix %^% 2) + ((2*(NumVariable**3))/(MiddlePoint**2))
+  
+  # Estimadores Ui y Zi
+  ListEstimUi <- c()
+  ListEstimZi <- c()
+  ListOutliers <- c()
+  Zalpha <- qnorm(1-Alpha,0,1)
+  ConstantMDP <- 1 + (2*NumVariable)/(Observations*sqrt(TraceRhoSquare))
+  
+  
+  if(OutliersFlag)
+  {
+    for( i  in 1:dim(outliersData)[1])
+    {
+      DistanceMahalanobisXi <- t((outliersData[i,] - MeanDMP))%*%InverseSigmaDMP%*%(outliersData[i,] - MeanDMP)
+      Ui <- (DistanceMahalanobisXi - NumVariable)/(2*ConstantMDP*sqrt(TraceRhoSquare))
+      ListEstimUi <- c(ListEstimUi,Ui)
+      Zi <- Ui-(4*TraceRhoCubic*(Zalpha**2-1))/(3*(2*TraceRhoSquare)^(3/2))
+      ListEstimZi <- c(ListEstimZi,Zi)
+    }
+  }
+  else
+  {
+    for( i  in 1:dim(DatesNorm)[1])
+    {
+      DistanceMahalanobisXi <- t((DatesNorm[i,] - MeanDMP))%*%InverseSigmaDMP%*%(DatesNorm[i,] - MeanDMP)
+      Ui <- (DistanceMahalanobisXi - NumVariable)/(2*ConstantMDP*sqrt(TraceRhoSquare))
+      ListEstimUi <- c(ListEstimUi,Ui)
+      Zi <- Ui-(4*TraceRhoCubic*(Zalpha**2-1))/(3*(2*TraceRhoSquare)^(3/2))
+      ListEstimZi <- c(ListEstimZi,Zi)
+      
+    }
+  }
+  return(list("Ui" = ListEstimUi, "Zi"= ListEstimZi))
+}
+
+SimulationT2Chart = function (observation, numVariables, numSimulation, meanVector, sigmaMatriz, alphaMRCD = 0.75 , typeMethod = "MRCD")
 {
   
   T2Matrix = c()
@@ -19,18 +125,66 @@ SimulationT2MRCDChart = function (observation, numVariables, numSimulation, mean
   for (i in 1:numSimulation)
   {
     Data = mvrnorm(Observation,mu=mu,Sigma = sigmaMatriz)
-    CovMRCD = CovMrcd(Data, alpha = alphaMRCD)
-    MediaMRCD = CovMRCD$center
-    SigmaMRCD = CovMRCD$cov
-    BestSubset = CovMRCD$best
-    
-    DataBestSubset = Data[BestSubset,] 
-    T2 = mahalanobis(DataBestSubset , center= MediaMRCD, cov = SigmaMRCD)
+    if (typeMethod == "MRCD")
+    {
+      tic()
+      CovMRCD = CovMrcd(Data, alpha = alphaMRCD)
+      exectime <- toc()
+      exectime <- exectime$toc - exectime$tic
+      print("MRCD tiempo")
+      MediaMRCD = CovMRCD$center
+      SigmaMRCD = CovMRCD$cov
+      BestSubset = CovMRCD$best
+      
+      DataBestSubset = Data[BestSubset,] 
+      T2 = mahalanobis(DataBestSubset , center= MediaMRCD, cov = SigmaMRCD)
+      LenMatrix = length(BestSubset)
+    }
+    else if (typeMethod == "T2MOD")
+    {
+      tic()
+      Media = colMeans(Data)
+      Sigma = cov(Data)
+      exectime <- toc()
+      exectime <- exectime$toc - exectime$tic
+      print("T2MOD tiempo")
+      SigmaMod = 1/(sum(diag(Sigma))/numVariables)
+      
+      T2 = c()
+      for (j in 1:dim(Data)[1])
+      {
+        Ai = (observation/(observation-1))*(norm((Data[j,]-Media)/sqrt(numVariables)^2, type = "2")/SigmaMod)
+        T2 = c(Ai,T2)
+      }
+      LenMatrix = observation
+    }
+    else if (typeMethod == "EBADIUI")
+    {
+      T2 = c()
+      tic()
+      Firstestimation = AlgorithmMDPCFPart1(Data, numVariables,Observation, 0.05, FALSE)
+      exectime <- toc()
+      exectime <- exectime$toc - exectime$tic
+      print("EBADIUI tiempo")
+      T2 = c(Firstestimation$Ui,T2)
+      LenMatrix = observation
+    }
+    else if (typeMethod == "EBADIZI")
+    {
+      T2 = c()
+      tic()
+      Firstestimation = AlgorithmMDPCFPart1(Data, numVariables,Observation, 0.05, FALSE)
+      exectime <- toc()
+      exectime <- exectime$toc - exectime$tic
+      print("EBADIZI tiempo")
+      T2 = c(Firstestimation$Zi,T2)
+      LenMatrix = observation
+    }
     T2Total = c(T2Total,T2)
     T2Max = c(T2Max,max(T2))
   }
-  LenBestSset = length(BestSubset)
-  T2Matrix  = matrix(T2Total, ncol = LenBestSset)
+  
+  T2Matrix  = matrix(T2Total, ncol = LenMatrix)
   return(list("T2Matrix" = T2Matrix,
               "T2Total" = T2Total,
               "T2Max" = T2Max))
@@ -95,11 +249,10 @@ SignalProbability = function (matrixT2, ucl, uclMax, uclKernel )
 
 
 
-SimulationT2MRCDChartOutliers = function (observation, numVariables, 
-                                          numSimulation, meanVector, 
-                                          sigmaMatriz, shiftMean, percentoutliers = 0, alphaMRCD = 0.75 )
+SimulationT2ChartOutliers = function (observation, numVariables, 
+                                      numSimulation, meanVector, 
+                                      sigmaMatriz, shiftMean, percentoutliers = 0, alphaMRCD = 0.75,  typeMethod = "MRCD")
 {
-  
   T2Matrix = c()
   T2Total = c()
   T2Max = c()
@@ -108,26 +261,93 @@ SimulationT2MRCDChartOutliers = function (observation, numVariables,
   {
     
     NumOutliers = floor(percentoutliers*observation)
-    Data = mvrnorm(Observation-NumOutliers,mu=mu,Sigma = sigmaMatriz)
-    if(NumOutliers >= 1)
+    if(identical(meanVector, shiftMean))
     {
-      DataOutlier = mvrnorm(NumOutliers, mu = shiftMean, Sigma = sigmaMatriz)
-      Data = rbind(Data, DataOutlier)
+      Data = mvrnorm(Observation,mu=mu,Sigma = sigmaMatriz)    
     }
-    
-    
-    CovMRCD = CovMrcd(Data, alpha = alphaMRCD)
-    MediaMRCD = CovMRCD$center
-    SigmaMRCD = CovMRCD$cov
-    BestSubset = CovMRCD$best
-    
-    DataBestSubset = Data[BestSubset,] 
-    
-    T2 = mahalanobis(DataOutlier , center= MediaMRCD, cov = SigmaMRCD)
+    else 
+    {
+      Data = mvrnorm(Observation-NumOutliers,mu=mu,Sigma = sigmaMatriz)
+      if(NumOutliers >= 1)
+      {
+        DataOutlier = mvrnorm(NumOutliers, mu = shiftMean, Sigma = sigmaMatriz)
+        Data = rbind(Data, DataOutlier)
+      }
+    }
+    if (typeMethod == "MRCD")
+    {
+      CovMRCD = CovMrcd(Data, alpha = alphaMRCD)
+      MediaMRCD = CovMRCD$center
+      SigmaMRCD = CovMRCD$cov
+      BestSubset = CovMRCD$best
+      DataBestSubset = Data[BestSubset,]
+      if(identical(meanVector, shiftMean))
+      {
+        T2 = mahalanobis(DataBestSubset , center= MediaMRCD, cov = SigmaMRCD)
+      }
+      else 
+      {
+        T2 = mahalanobis(DataOutlier, center= MediaMRCD, cov = SigmaMRCD)
+      }
+    }
+    else if (typeMethod == "T2MOD")
+    {
+      Media = colMeans(Data)
+      Sigma = cov(Data)
+      SigmaMod = 1/(sum(diag(Sigma))/numVariables)
+      
+      T2 = c()
+      if(identical(meanVector, shiftMean))
+      {
+        for (j in 1:dim(Data)[1])
+        {
+          Ai = (observation/(observation-1))*(norm((Data[j,]-Media)/sqrt(numVariables)^2, type = "2")/SigmaMod)
+          T2 = c(Ai,T2)
+        }
+      }
+      else 
+      {
+        for (j in 1:dim(DataOutlier)[1])
+        {
+          Ai = (observation/(observation-1))*(norm((DataOutlier[j,]-Media)/sqrt(numVariables)^2, type = "2")/SigmaMod)
+          T2 = c(Ai,T2)
+        }
+      }
+    }
+    else if (typeMethod == "EBADIUI")
+    {
+      T2 = c()
+      
+      if(identical(meanVector, shiftMean))
+      {
+        Firstestimation = AlgorithmMDPCFPart1(Data, numVariables,Observation, 0.05,c(), FALSE)
+        T2 = c(Firstestimation$Ui,T2)
+      }
+      else 
+      {
+        Firstestimation = AlgorithmMDPCFPart1(Data, numVariables,Observation, 0.05, DataOutlier, TRUE)
+        T2 = c(Firstestimation$Ui,T2)
+      }
+      LenMatrix = observation
+    }
+    else if (typeMethod == "EBADIZI")
+    {
+      T2 = c()
+      if(identical(meanVector, shiftMean))
+      {
+        Firstestimation = AlgorithmMDPCFPart1(Data, numVariables,Observation, 0.05,c(), FALSE)
+        T2 = c(Firstestimation$Zi,T2)
+      }
+      else 
+      {
+        Firstestimation = AlgorithmMDPCFPart1(Data, numVariables,Observation, 0.05, DataOutlier, TRUE)
+        T2 = c(Firstestimation$Zi,T2)
+      }
+      LenMatrix = observation
+    }
     T2Total = c(T2Total,T2)
     T2Max = c(T2Max,max(T2))
   }
-  LenBestSset = length(BestSubset)
   T2Matrix  = matrix(T2Total, ncol = 1)
   return(list("T2Matrix" = T2Matrix,
               "T2Total" = T2Total,
@@ -135,34 +355,83 @@ SimulationT2MRCDChartOutliers = function (observation, numVariables,
 }
 
 
-# Parte 1 Calculo de los Limites de Probabilidad
-Observation = 50
-NumberVariable = 100
-NumSimulation = 100
+#Parameters Simulación
+Observation = 100
+NumberVariable = 250
+NumSimulation = 1
 SigmaCorr = randcorr(NumberVariable)
 mu = rep(0,NumberVariable)
+AlphaMRCD = 0.75
+AlphaPFA = 0.05
+NumSimulationDelta = 1
 
-Values = SimulationT2MRCDChart(Observation,
+# Parte 1 Calculo de los Limites de Probabilidad MRCD
+
+# MRCD
+ValuesMRCD = SimulationT2Chart(Observation,
                                NumberVariable,
                                NumSimulation,
                                mu,
                                SigmaCorr,
-                               0.75)
+                               AlphaMRCD,
+                               "MRCD")
+KernelMethodMRCD = MethodUCLKernel(ValuesMRCD$T2Total,AlphaPFA)
+UCLMRCD = qemp(p = 1-AlphaPFA, obs = ValuesMRCD$T2Total) 
+UCLMaxMRCD = qemp(p = 1-AlphaPFA, obs = ValuesMRCD$T2Max) 
+UCLKernelMRCD = KernelMethodMRCD$UCL
 
-#alpha = 0.005  , 200
-#alpha  = 0.0027, 370
-#alpha = 0.05 , 20
-AlphaPFA = 0.005
+SignalProbabilityT2MRCD = SignalProbability(ValuesMRCD$T2Matrix, UCLMRCD,UCLMaxMRCD, UCLKernelMRCD)
 
-KernelMethod = MethodUCLKernel(Values$T2Total,AlphaPFA)
-UCL = qemp(p = 1-AlphaPFA, obs = Values$T2Total) 
-UCLMax = qemp(p = 1-AlphaPFA, obs = Values$T2Max) 
-UCLKernel = KernelMethod$UCL
+#T2MOD
 
-SignalProbabilityT2 = SignalProbability(Values$T2Matrix, UCL,UCLMax, UCLKernel)
+ValuesT2MOD = SimulationT2Chart(Observation,
+                                NumberVariable,
+                                NumSimulation,
+                                mu,
+                                SigmaCorr,
+                                AlphaMRCD,
+                                "T2MOD")
+KernelMethodT2MOD = MethodUCLKernel(ValuesT2MOD$T2Total,AlphaPFA)
+UCLT2MOD = qemp(p = 1-AlphaPFA, obs = ValuesT2MOD$T2Total) 
+UCLMaxT2MOD = qemp(p = 1-AlphaPFA, obs = ValuesT2MOD$T2Max) 
+UCLKernelT2MOD = KernelMethodT2MOD$UCL
+
+SignalProbabilityT2MOD = SignalProbability(ValuesT2MOD$T2Matrix, UCLT2MOD,UCLMaxT2MOD, UCLKernelT2MOD)
+
+# EBADIUI
+ValuesEBADIUI = SimulationT2Chart(Observation,
+                                  NumberVariable,
+                                  NumSimulation,
+                                  mu,
+                                  SigmaCorr,
+                                  AlphaMRCD,
+                                  "EBADIUI")
+KernelMethodEBADIUI = MethodUCLKernel(ValuesEBADIUI$T2Total,AlphaPFA)
+UCLEBADIUI = qemp(p = 1-AlphaPFA, obs = ValuesEBADIUI$T2Total) 
+UCLMaxEBADIUI = qemp(p = 1-AlphaPFA, obs = ValuesEBADIUI$T2Max) 
+UCLKernelEBADIUI = KernelMethodEBADIUI$UCL
+
+SignalProbabilityT2EBADIUI = SignalProbability(ValuesEBADIUI$T2Matrix, UCLEBADIUI,UCLMaxEBADIUI, UCLKernelEBADIUI)
+
+# EBADIZI
+ValuesEBADIZI = SimulationT2Chart(Observation,
+                                  NumberVariable,
+                                  NumSimulation,
+                                  mu,
+                                  SigmaCorr,
+                                  AlphaMRCD,
+                                  "EBADIZI")
+KernelMethodEBADIZI = MethodUCLKernel(ValuesEBADIZI$T2Total,AlphaPFA)
+UCLEBADIZI = qemp(p = 1-AlphaPFA, obs = ValuesEBADIZI$T2Total) 
+UCLMaxEBADIZI = qemp(p = 1-AlphaPFA, obs = ValuesEBADIZI$T2Max) 
+UCLKernelEBADIZI = KernelMethodEBADIZI$UCL
+
+SignalProbabilityT2EBADIZI = SignalProbability(ValuesEBADIZI$T2Matrix, UCLEBADIZI,UCLMaxEBADIZI, UCLKernelEBADIZI)
+
 
 # Parte 2 Calculo del parametro de no centralidad 
-ArrayShiftmu = list(rep(1/100,NumberVariable),
+ArrayShiftmu = list(mu,
+                    rep(1/100,NumberVariable),
                     rep(5/100,NumberVariable),
                     rep(10/100,NumberVariable),
                     rep(15/100,NumberVariable),
@@ -174,30 +443,105 @@ ArrayShiftmu = list(rep(1/100,NumberVariable),
                     rep(1,NumberVariable))
 
 Inverse = solve(SigmaCorr)
-Percentoutliers = 0.25
-MatrixDelta = matrix( ,ncol = 4)
+Percentoutliers = 0.2
+MatrixDeltaMRCD = matrix(,ncol = 4)
+MatrixDeltaT2MOD = matrix(,ncol = 4)
+MatrixDeltaEBADIUI = matrix(,ncol = 4)
+MatrixDeltaEBADIZI = matrix(,ncol = 4)
 for (shiftmu in ArrayShiftmu)
 {
   DeltaNCP = sqrt(t(shiftmu-mu)%*%Inverse%*%(shiftmu-mu))
- 
-  ValuesOutliers = SimulationT2MRCDChartOutliers(Observation,
+  
+  #MRCD
+  ValuesOutliersMRCD = SimulationT2ChartOutliers(Observation,
                                                  NumberVariable,
-                                                 NumSimulation,
+                                                 NumSimulationDelta,
                                                  mu,
                                                  SigmaCorr,
                                                  shiftmu,
                                                  Percentoutliers,
-                                                 0.75)
-  
-  SignalProbabilityT2Outliers = SignalProbability(ValuesOutliers$T2Matrix, UCL,UCLMax, UCLKernel)
-  Rowdelta = c( DeltaNCP[1,1], 
-             SignalProbabilityT2Outliers$SignalPro, 
-             SignalProbabilityT2Outliers$SignalProMax, 
-             SignalProbabilityT2Outliers$SignalProKernel)
-  MatrixDelta = rbind(MatrixDelta,Rowdelta)
-}
-MatrixDelta =  MatrixDelta[-1,]
+                                                 AlphaMRCD,
+                                                 "MRCD")
 
-plot(MatrixDelta[,1],MatrixDelta[,2])
-plot(MatrixDelta[,1],MatrixDelta[,3])
-plot(MatrixDelta[,1],MatrixDelta[,4])
+  SignalProbabilityT2OutliersMRCD = SignalProbability(ValuesOutliersMRCD$T2Matrix, UCLMRCD,UCLMaxMRCD, UCLKernelMRCD)
+  RowdeltaMRCD = c(DeltaNCP[1,1],
+               SignalProbabilityT2OutliersMRCD$SignalPro,
+               SignalProbabilityT2OutliersMRCD$SignalProMax,
+               SignalProbabilityT2OutliersMRCD$SignalProKernel)
+  MatrixDeltaMRCD = rbind(MatrixDeltaMRCD,RowdeltaMRCD)
+  
+  #T2MOD
+  ValuesOutliersT2MOD = SimulationT2ChartOutliers(Observation,
+                                                 NumberVariable,
+                                                 NumSimulationDelta,
+                                                 mu,
+                                                 SigmaCorr,
+                                                 shiftmu,
+                                                 Percentoutliers,
+                                                 AlphaMRCD,
+                                                 "T2MOD")
+  
+  SignalProbabilityT2OutliersT2MOD = SignalProbability(ValuesOutliersT2MOD$T2Matrix, UCLT2MOD,UCLMaxT2MOD, UCLKernelT2MOD)
+  RowdeltaT2MOD = c(DeltaNCP[1,1],
+                   SignalProbabilityT2OutliersT2MOD$SignalPro,
+                   SignalProbabilityT2OutliersT2MOD$SignalProMax,
+                   SignalProbabilityT2OutliersT2MOD$SignalProKernel)
+  MatrixDeltaT2MOD = rbind(MatrixDeltaT2MOD,RowdeltaT2MOD)
+  
+  #EBADIUI
+  ValuesOutliersEBADIUI = SimulationT2ChartOutliers(Observation,
+                                                    NumberVariable,
+                                                    NumSimulationDelta,
+                                                    mu,
+                                                    SigmaCorr,
+                                                    shiftmu,
+                                                    Percentoutliers,
+                                                    AlphaMRCD,
+                                                    "EBADIUI")
+  
+  SignalProbabilityT2OutliersEBADIUI = SignalProbability(ValuesOutliersEBADIUI$T2Matrix, UCLEBADIUI,UCLMaxEBADIUI, UCLMaxEBADIUI)
+  RowdeltaEBADIUI  = c(DeltaNCP[1,1],
+                       SignalProbabilityT2OutliersEBADIUI$SignalPro,
+                       SignalProbabilityT2OutliersEBADIUI$SignalProMax,
+                       SignalProbabilityT2OutliersEBADIUI$SignalProKernel)
+  MatrixDeltaEBADIUI = rbind(MatrixDeltaEBADIUI,RowdeltaEBADIUI)
+  
+  #EBADIZI
+  ValuesOutliersEBADIZI = SimulationT2ChartOutliers(Observation,
+                                                    NumberVariable,
+                                                    NumSimulationDelta,
+                                                    mu,
+                                                    SigmaCorr,
+                                                    shiftmu,
+                                                    Percentoutliers,
+                                                    AlphaMRCD,
+                                                    "EBADIZI")
+  
+  SignalProbabilityT2OutliersEBADIZI = SignalProbability(ValuesOutliersEBADIZI$T2Matrix, UCLEBADIZI,UCLMaxEBADIZI, UCLMaxEBADIZI)
+  RowdeltaEBADIZI  = c(DeltaNCP[1,1],
+                       SignalProbabilityT2OutliersEBADIZI$SignalPro,
+                       SignalProbabilityT2OutliersEBADIZI$SignalProMax,
+                       SignalProbabilityT2OutliersEBADIZI$SignalProKernel)
+  MatrixDeltaEBADIZI = rbind(MatrixDeltaEBADIZI,RowdeltaEBADIZI)
+  
+}
+MatrixDeltaMRCD = MatrixDeltaMRCD[-1,]
+MatrixDeltaT2MOD = MatrixDeltaT2MOD[-1,]
+MatrixDeltaEBADIUI = MatrixDeltaEBADIUI[-1,]
+MatrixDeltaEBADIZI = MatrixDeltaEBADIZI[-1,]
+
+text <- c("MRCD","T2MOD","EBADIUI","EBADIZI")
+plot_colors <- c("red","green","blue","orange")
+
+
+library(svglite)
+urlplot ="/Users/kevin.pineda/Desktop/Imagenes TG 1/Imagen100x250x1000x0.05x20.svg"
+svglite(urlplot, width = 8, height = 8)
+par(mar = c(10,5, 5, 5))
+p = plot(MatrixDeltaMRCD[,1],MatrixDeltaMRCD[,2], ylim = c(0,1), col='red', pch = 16,type='b', xlab ="Delta Values", ylab="Signal Probability",lty = 1)
+lines(MatrixDeltaT2MOD[,1],MatrixDeltaT2MOD[,2], col='green',pch = 17,type='b',lty = 4)
+lines(MatrixDeltaEBADIUI[,1],MatrixDeltaEBADIUI[,2], col='blue',pch = 18,type='b',lty = 5)
+lines(MatrixDeltaEBADIZI[,1],MatrixDeltaEBADIZI[,2], col='orange',pch = 15,type='b',lty = 6)
+dev.off()
+
+
