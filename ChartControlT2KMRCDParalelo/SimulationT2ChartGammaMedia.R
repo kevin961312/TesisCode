@@ -10,7 +10,7 @@ typeMethod = "MRCD", beta = 1, KMRCDModel= "RbfKernel") {
 
   for (i in 1:numSimulation)
   {
-    Data <- rmvgamma(observation,rep(rho,numVariables),rep(beta,numVariables),sigma)
+    Data <- rmvgamma(observation,rho,beta,sigma)
     if (typeMethod == "MRCD") {
       CovMRCD = CovMrcd(Data, alpha = alphaMRCD)
       MediaMRCD = CovMRCD$center
@@ -70,7 +70,7 @@ typeMethod = "MRCD", beta = 1, KMRCDModel= "RbfKernel") {
 
   for (i in 1:numSimulation)
   {
-    Data <- rmvgamma(observation,rep(rho,numVariables),rep(beta,numVariables),sigma)
+    Data <- rmvgamma(observation,rho,beta,sigma)
     if (typeMethod == "MRCD") {
       CovMRCD = CovMrcd(Data, alpha = alphaMRCD)
       MediaMRCD = CovMRCD$center
@@ -129,20 +129,20 @@ typeMethod = "MRCD", beta = 1, KMRCDModel= "RbfKernel") {
 SimulationT2ChartOutliers <- function(observation, numVariables,
                                       numSimulation, sigma, rho, rhoShift, percentoutliers = 0, 
                                       alphaMRCD = 0.75, typeMethod = "MRCD", beta = 1, DeltaNCP = 0.05, 
-                                      UCL =1,UCLMax=1, UCLKernel =1 ,KMRCDModel= "RbfKernel",replicateFlag = FALSE) {
+                                      UCL =1,UCLMax=1, UCLKernel =1,rhoShift1 = 0 ,KMRCDModel= "RbfKernel") {
   T2Matrix <- c()
   T2Total <- c()
   T2Max <- c()
 
   for (i in 1:numSimulation)
   {
-    NumOutliers <- floor(percentoutliers * observation)s
-    if (rhoShift == 0) {
-      Data <- rmvgamma(observation,(rho,numVariables),rep(beta,numVariables),sigma)
+    NumOutliers <- floor(percentoutliers * observation)
+    if (rhoShift1 == 0) {
+      Data <- rmvgamma(observation,rho,beta,sigma)
     } else {
-      Data <- rmvgamma(observation - NumOutliers,rep(rho,numVariables),rep(beta,numVariables),sigma)
+      Data <- rmvgamma(observation - NumOutliers,rho,beta,sigma)
       if (NumOutliers >= 1) {
-        DataOutlier <- rmvgamma(NumOutliers,rep(rho + rhoShift,numVariables),rep(beta,numVariables),sigma)
+        DataOutlier <- rmvgamma(NumOutliers,rhoShift,beta,sigma)
         Data <- rbind(Data, DataOutlier)
       }
     }
@@ -152,7 +152,7 @@ SimulationT2ChartOutliers <- function(observation, numVariables,
       SigmaMRCD = CovMRCD$cov
       BestSubset = CovMRCD$best
       DataBestSubset = Data[BestSubset,]
-      if (rhoShift == 0) {
+      if (rhoShift1 == 0) {
         T2 <- mahalanobis(DataBestSubset, center = MediaMRCD, cov = SigmaMRCD)
       } else {
         T2 <- mahalanobis(DataOutlier, center = MediaMRCD, cov = SigmaMRCD)
@@ -163,7 +163,7 @@ SimulationT2ChartOutliers <- function(observation, numVariables,
       SigmaMod <- 1 / (sum(diag(Sigma)) / numVariables)
 
       T2 <- c()
-      if (rhoShift == 0) {
+      if (rhoShift1 == 0) {
         for (j in 1:dim(Data)[1])
         {
           Ai <- (observation / (observation - 1)) * (norm((Data[j, ] - Media) / sqrt(numVariables)^2, type = "2") / SigmaMod)
@@ -179,7 +179,7 @@ SimulationT2ChartOutliers <- function(observation, numVariables,
     } else if (typeMethod == "EBADIUI") {
       T2 <- c()
 
-      if (rhoShift == 0) {
+      if (rhoShift1 == 0) {
         Firstestimation <- AlgorithmMDPCFPart1(Data, numVariables, observation, 0.05, c(), FALSE)
         T2 <- c(Firstestimation$Ui, T2)
       } else {
@@ -189,7 +189,7 @@ SimulationT2ChartOutliers <- function(observation, numVariables,
       LenMatrix <- observation
     } else if (typeMethod == "EBADIZI") {
       T2 <- c()
-      if (rhoShift == 0) {
+      if (rhoShift1 == 0) {
         Firstestimation <- AlgorithmMDPCFPart1(Data, numVariables, observation, 0.05, c(), FALSE)
         T2 <- c(Firstestimation$Zi, T2)
       } else {
@@ -200,7 +200,7 @@ SimulationT2ChartOutliers <- function(observation, numVariables,
     } else if (typeMethod == "KMRCD") {
       T2 <- c()
       CovKMRCD <- CovKmrcd(x = Data,kModel = KMRCDModel,alpha = alphaMRCD)
-      if (rhoShift == 0) {
+      if (rhoShift1 == 0) {
         DataBestSubset <- Data[CovKMRCD$hsubsetIndices, ]
         meanKMRCD <- colMeans(DataBestSubset)
         T2 <- mahalanobis(DataBestSubset, center = meanKMRCD, cov = CovKMRCD$cov)
@@ -223,11 +223,6 @@ SimulationT2ChartOutliers <- function(observation, numVariables,
            SignalProbabilityT2OutliersMRCD$SignalProMax,
            SignalProbabilityT2OutliersMRCD$SignalProKernel))
 
-  # return(list(
-  #   "T2Matrix" = T2Matrix,
-  #   "T2Total" = T2Total,
-  #   "T2Max" = T2Max
-  # ))
 }
 
 
@@ -235,7 +230,7 @@ SimulationT2ChartOutliers <- function(observation, numVariables,
 
 SimulationT2ChartOutliersOld <- function(observation, numVariables,
                                       numSimulation, sigma, rho, rhoShift, percentoutliers = 0, 
-                                      alphaMRCD = 0.75, typeMethod = "MRCD", beta = 1, KMRCDModel= "RbfKernel") {
+                                      alphaMRCD = 0.75, typeMethod = "MRCD", beta = 1,rhoShift1 = 0, KMRCDModel= "RbfKernel") {
   T2Matrix <- c()
   T2Total <- c()
   T2Max <- c()
@@ -243,12 +238,13 @@ SimulationT2ChartOutliersOld <- function(observation, numVariables,
   for (i in 1:numSimulation)
   {
     NumOutliers <- floor(percentoutliers * observation)
-    if (rhoShift == 0) {
-      Data <- rmvgamma(observation,rep(rho,numVariables),rep(beta,numVariables),sigma)
+    if (rhoShift1 == 0) {
+      Data <- rmvgamma(observation,rho,beta,sigma)
     } else {
-      Data <- rmvgamma(observation - NumOutliers,rep(rho,numVariables),rep(beta,numVariables),sigma)
+      Data <- rmvgamma(observation - NumOutliers,rho,beta,sigma)
       if (NumOutliers >= 1) {
-        DataOutlier <- rmvgamma(NumOutliers,rep(rho + rhoShift,numVariables),rep(beta,numVariables),sigma)
+        DataOutlier <- rmvgamma(NumOutliers,rhoShift,beta
+        ,sigma)
         Data <- rbind(Data, DataOutlier)
       }
     }
@@ -258,7 +254,7 @@ SimulationT2ChartOutliersOld <- function(observation, numVariables,
       SigmaMRCD = CovMRCD$cov
       BestSubset = CovMRCD$best
       DataBestSubset = Data[BestSubset,]
-      if (rhoShift == 0) {
+      if (rhoShift1 == 0) {
         T2 <- mahalanobis(DataBestSubset, center = MediaMRCD, cov = SigmaMRCD)
       } else {
         T2 <- mahalanobis(DataOutlier, center = MediaMRCD, cov = SigmaMRCD)
@@ -269,7 +265,7 @@ SimulationT2ChartOutliersOld <- function(observation, numVariables,
       SigmaMod <- 1 / (sum(diag(Sigma)) / numVariables)
 
       T2 <- c()
-      if (rhoShift == 0) {
+      if (rhoShift1 == 0) {
         for (j in 1:dim(Data)[1])
         {
           Ai <- (observation / (observation - 1)) * (norm((Data[j, ] - Media) / sqrt(numVariables)^2, type = "2") / SigmaMod)
@@ -285,7 +281,7 @@ SimulationT2ChartOutliersOld <- function(observation, numVariables,
     } else if (typeMethod == "EBADIUI") {
       T2 <- c()
 
-      if (rhoShift == 0) {
+      if (rhoShift1 == 0) {
         Firstestimation <- AlgorithmMDPCFPart1(Data, numVariables, observation, 0.05, c(), FALSE)
         T2 <- c(Firstestimation$Ui, T2)
       } else {
@@ -295,7 +291,7 @@ SimulationT2ChartOutliersOld <- function(observation, numVariables,
       LenMatrix <- observation
     } else if (typeMethod == "EBADIZI") {
       T2 <- c()
-      if (rhoShift == 0) {
+      if (rhoShift1 == 0) {
         Firstestimation <- AlgorithmMDPCFPart1(Data, numVariables, observation, 0.05, c(), FALSE)
         T2 <- c(Firstestimation$Zi, T2)
       } else {
@@ -306,7 +302,7 @@ SimulationT2ChartOutliersOld <- function(observation, numVariables,
     } else if (typeMethod == "KMRCD") {
       T2 <- c()
       CovKMRCD <- CovKmrcd(x = Data,kModel = KMRCDModel,alpha = alphaMRCD)
-      if (rhoShift == 0) {
+      if (rhoShift1 == 0) {
         DataBestSubset <- Data[CovKMRCD$hsubsetIndices, ]
         meanKMRCD <- colMeans(DataBestSubset)
         T2 <- mahalanobis(DataBestSubset, center = meanKMRCD, cov = CovKMRCD$cov)

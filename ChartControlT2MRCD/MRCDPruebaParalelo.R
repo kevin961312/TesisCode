@@ -1,4 +1,4 @@
-rm(list=ls())
+
 library(here)
 library(MASS)
 library(clusterGeneration)
@@ -9,34 +9,30 @@ library(KernSmooth)
 library(psych)
 library(expm)
 library(Rfast)
-library(copula)
-library(lcmix)
-library(foreach)
-library(doParallel)
 
-source(here::here("Downloads/Tesis/TesisCode/ChartControlT2KMRCDParalelo/MethodUCLKernel.R"))
-source(here::here("Downloads/Tesis/TesisCode/ChartControlT2KMRCDParalelo/SignalProbability.R"))
-source(here::here("Downloads/Tesis/TesisCode/ChartControlT2KMRCDParalelo/SimulationT2ChartGammaMedia.R"))
+
+source(here::here("Downloads/Tesis/TesisCode/ChartControlT2MRCD/MethodUCLKernel.R"))
+source(here::here("Downloads/Tesis/TesisCode/ChartControlT2MRCD/SignalProbability.R"))
+source(here::here("Downloads/Tesis/TesisCode/ChartControlT2MRCD/SimulationT2ChartMedia.R"))
 set.seed(123)
 
 #Parameters Simulación
-registerDoParallel(5)
-Observation = 100
+Observation = 150
 NumberVariable = 250
 NumSimulation = 1000
-rho = rep(1:5, times = NumberVariable/length(1:5))
-beta = rep(c(1,3,0.5,2,5), times = NumberVariable/length(1:5))
-AlphaMRCD = 0.75
-AlphaPFA = 0.05
-
-Percentoutliers = 0.2
-NumSimulationDelta = 1000
 
 fun <- function(i,j) (0.5)^(abs(i-j))
+
 rows <- 1:NumberVariable
 cols <- 1:NumberVariable
 
 SigmaCorr = outer(rows,cols,FUN=fun)
+# SigmaCorr = randcorr(NumberVariable)
+mu = rep(0,NumberVariable)
+AlphaMRCD = 0.75
+AlphaPFA = 0.05
+NumSimulationDelta = 1000
+
 
 # Parte 1 Calculo de los Limites de Probabilidad MRCD
 
@@ -44,10 +40,10 @@ valuesT2Total <- foreach(i=c("MRCD","T2MOD","EBADIUI","EBADIZI"), .combine='cbin
   SimulationT2Chart(Observation,
                     NumberVariable,
                     NumSimulation,
+                    mu,
                     SigmaCorr,
-                    rho,
                     AlphaMRCD,
-                    i,beta)
+                    i)
 }
 
 # MRCD
@@ -91,145 +87,102 @@ UCLKernelEBADIZI = KernelMethodEBADIZI$UCL
 SignalProbabilityT2EBADIZI = SignalProbability(ValuesEBADIZIT2Matrix[[1]], UCLEBADIZI,UCLMaxEBADIZI, UCLKernelEBADIZI)
 
 # Parte 2 Calculo del parametro de no centralidad 
-ArrayRhoShift = c(0,
-                     1/100,
-                     5/100,
-                     10/100,
-                     15/100,
-                     25/100,
-                     50/100,
-                     60/100,
-                     75/100,
-                     90/100,
-                     1)
+# Parte 2 Calculo del parametro de no centralidad 
+ArrayShiftmu = list(mu,
+                    rep(1/100,NumberVariable),
+                    rep(5/100,NumberVariable),
+                    rep(10/100,NumberVariable),
+                    rep(15/100,NumberVariable),
+                    rep(25/100,NumberVariable),
+                    rep(50/100,NumberVariable),
+                    rep(60/100,NumberVariable),
+                    rep(75/100,NumberVariable),
+                    rep(90/100,NumberVariable),
+                    rep(1,NumberVariable))
+
 
 Inverse = solve(SigmaCorr)
+Percentoutliers = 0.2
+MatrixDeltaMRCD = matrix(,ncol = 4)
+MatrixDeltaT2MOD = matrix(,ncol = 4)
+MatrixDeltaEBADIUI = matrix(,ncol = 4)
+MatrixDeltaEBADIZI = matrix(,ncol = 4)
 
 
-MatrixDeltaMRCD =  foreach(rhoShift=ArrayRhoShift, .combine='rbind') %dopar% {
-  DeltaNCP = sqrt(t((rho+rhoShift)/beta-rho/beta)%*%Inverse%*%((rho+rhoShift)/beta-rho/beta))
-  rhosum = rho + rhoShift
+MatrixDeltaMRCD =  foreach(shiftmu=ArrayRhoShift, .combine='rbind') %dopar% {
+  DeltaNCP = sqrt(t(shiftmu-mu)%*%Inverse%*%(shiftmu-mu))
   SimulationT2ChartOutliers(Observation,
                             NumberVariable,
                             NumSimulationDelta,
+                            mu,
                             SigmaCorr,
-                            rho,
-                            rhosum,
+                            shiftmu,
                             Percentoutliers,
                             AlphaMRCD,
-                            "MRCD",
-                            beta,
-                            DeltaNCP[1,1],
+                            DeltaNCP,
                             UCLMRCD,
                             UCLMaxMRCD,
                             UCLKernelMRCD,
-                            rhoShift)
+                            "MRCD")
 }
 
-MatrixDeltaT2MOD = foreach(rhoShift=ArrayRhoShift, .combine='rbind') %dopar% {
-  DeltaNCP = sqrt(t((rho+rhoShift)/beta-rho/beta)%*%Inverse%*%((rho+rhoShift)/beta-rho/beta))
+MatrixDeltaT2MOD = foreach(shiftmu=ArrayRhoShift, .combine='rbind') %dopar% {
+  DeltaNCP = sqrt(t(shiftmu-mu)%*%Inverse%*%(shiftmu-mu))
   SimulationT2ChartOutliers(Observation,
                             NumberVariable,
                             NumSimulationDelta,
+                            mu,
                             SigmaCorr,
-                            rho,
-                            rho + rhoShift,
+                            shiftmu,
                             Percentoutliers,
                             AlphaMRCD,
-                            "T2MOD",
-                            beta,
-                            DeltaNCP[1,1],
+                            DeltaNCP,
                             UCLT2MOD,
                             UCLMaxT2MOD,
                             UCLKernelT2MOD,
-                            rhoShift)
+                             "T2MOD")
 }
-MatrixDeltaEBADIUI = foreach(rhoShift=ArrayRhoShift, .combine='rbind') %dopar% {
-  DeltaNCP = sqrt(t((rho+rhoShift)/beta-rho/beta)%*%Inverse%*%((rho+rhoShift)/beta-rho/beta))
+MatrixDeltaEBADIUI = foreach(shiftmu=ArrayRhoShift, .combine='rbind') %dopar% {
+  DeltaNCP = sqrt(t(shiftmu-mu)%*%Inverse%*%(shiftmu-mu))
   SimulationT2ChartOutliers(Observation,
                             NumberVariable,
                             NumSimulationDelta,
+                            mu,
                             SigmaCorr,
-                            rho,
-                            rho + rhoShift,
+                            shiftmu,
                             Percentoutliers,
                             AlphaMRCD,
-                            "EBADIUI",
-                            beta,
-                            DeltaNCP[1,1],
+                            DeltaNCP,
                             UCLEBADIUI,
                             UCLMaxEBADIUI,
                             UCLKernelEBADIUI,
-                            rhoShift)
+                            "EBADIUI")
 }
 
-MatrixDeltaEBADIZI = foreach(rhoShift=ArrayRhoShift, .combine='rbind') %dopar% {
-  DeltaNCP = sqrt(t((rho+rhoShift)/beta-rho/beta)%*%Inverse%*%((rho+rhoShift)/beta-rho/beta))
+MatrixDeltaEBADIZI = foreach(shiftmu=ArrayRhoShift, .combine='rbind') %dopar% {
+   DeltaNCP = sqrt(t(shiftmu-mu)%*%Inverse%*%(shiftmu-mu))
   SimulationT2ChartOutliers(Observation,
                             NumberVariable,
                             NumSimulationDelta,
+                            mu,
                             SigmaCorr,
-                            rho,
-                            rho + rhoShift,
+                            shiftmu,
                             Percentoutliers,
                             AlphaMRCD,
-                            "EBADIZI",
-                            beta,
-                            DeltaNCP[1,1],
+                            DeltaNCP,
                             UCLEBADIZI,
                             UCLMaxEBADIZI,
                             UCLKernelEBADIZI,
-                            rhoShift)
+                            "EBADIZI")
 }
 
-# KMRCD
-ValuesKMRCD = SimulationT2ChartOld(Observation,
-                                   NumberVariable,
-                                   NumSimulation,
-                                   SigmaCorr,
-                                   rho,
-                                   AlphaMRCD,
-                                   "KMRCD",beta)
 
-KernelMethodKMRCD = MethodUCLKernel(ValuesKMRCD$T2Total,AlphaPFA)
-UCLKMRCD = qemp(p = 1-AlphaPFA, obs = ValuesKMRCD$T2Total) 
-UCLMaxKMRCD = qemp(p = 1-AlphaPFA, obs = ValuesKMRCD$T2Max) 
-UCLKernelKMRCD = KernelMethodKMRCD$UCL
-
-
-MatrixDeltaKMRCD = matrix(,ncol = 4)
-for (rhoShift in ArrayRhoShift)
-{
-  DeltaNCP = sqrt(t((rho+rhoShift)/beta-rho/beta)%*%Inverse%*%((rho+rhoShift)/beta-rho/beta))
-  #KMRCD
-  ValuesOutliersKMRCD = SimulationT2ChartOutliersOld(Observation,
-                                                     NumberVariable,
-                                                     NumSimulationDelta,
-                                                     SigmaCorr,
-                                                     rho,
-                                                     rho + rhoShift,
-                                                     Percentoutliers,
-                                                     AlphaMRCD,
-                                                     "KMRCD",beta,
-                                                     rhoShift)
-  
-  SignalProbabilityT2OutliersKMRCD = SignalProbability(ValuesOutliersKMRCD$T2Matrix, UCLKMRCD,UCLMaxKMRCD, UCLMaxKMRCD)
-  RowdeltaKMRCD  = c(DeltaNCP[1,1],
-                     SignalProbabilityT2OutliersKMRCD$SignalPro,
-                     SignalProbabilityT2OutliersKMRCD$SignalProMax,
-                     SignalProbabilityT2OutliersKMRCD$SignalProKernel)
-  MatrixDeltaKMRCD = rbind(MatrixDeltaKMRCD,RowdeltaKMRCD)
-  
-}
-
-MatrixDeltaKMRCD = MatrixDeltaKMRCD[-1,]
 
 
 p = plot(MatrixDeltaMRCD[,1],MatrixDeltaMRCD[,2], ylim = c(0,1), col='red', pch = 16,type='b', xlab ="Delta Values", ylab="Signal Probability",lty = 1)
 lines(MatrixDeltaT2MOD[,1],MatrixDeltaT2MOD[,2], col='green',pch = 17,type='b',lty = 4)
 lines(MatrixDeltaEBADIUI[,1],MatrixDeltaEBADIUI[,2], col='blue',pch = 18,type='b',lty = 5)
 lines(MatrixDeltaEBADIZI[,1],MatrixDeltaEBADIZI[,2], col='orange',pch = 15,type='b',lty = 6)
-lines(MatrixDeltaKMRCD[,1],MatrixDeltaKMRCD[,2], col='purple',pch = 15,type='b',lty = 6)
 
 
 rm(list=ls())
@@ -243,7 +196,6 @@ for (i in 1:length(ArrayRhoShift)) {
   MatrixDeltaT2MOD[i,1] = DeltaNCP
   MatrixDeltaEBADIUI[i,1] = DeltaNCP
   MatrixDeltaEBADIZI[i,1] = DeltaNCP
-  MatrixDeltaKMRCD[i,1] = DeltaNCP
   
 }
 
@@ -252,7 +204,6 @@ p = plot(MatrixDeltaMRCD[,1],MatrixDeltaMRCD[,2], ylim = c(0,1), col='red', pch 
 lines(MatrixDeltaT2MOD[,1],MatrixDeltaT2MOD[,2], col='green',pch = 17,type='b',lty = 4)
 lines(MatrixDeltaEBADIUI[,1],MatrixDeltaEBADIUI[,2], col='blue',pch = 18,type='b',lty = 5)
 lines(MatrixDeltaEBADIZI[,1],MatrixDeltaEBADIZI[,2], col='orange',pch = 15,type='b',lty = 6)
-lines(MatrixDeltaKMRCD[,1],MatrixDeltaKMRCD[,2], col='purple',pch = 15,type='b',lty = 6)
 
 
 svglite(urlplot, width = 8, height = 8)
@@ -260,5 +211,5 @@ p = plot(MatrixDeltaMRCD[,1],MatrixDeltaMRCD[,2], ylim = c(0,1), col='red', pch 
 lines(MatrixDeltaT2MOD[,1],MatrixDeltaT2MOD[,2], col='green',pch = 17,type='b',lty = 4)
 lines(MatrixDeltaEBADIUI[,1],MatrixDeltaEBADIUI[,2], col='blue',pch = 18,type='b',lty = 5)
 lines(MatrixDeltaEBADIZI[,1],MatrixDeltaEBADIZI[,2], col='orange',pch = 15,type='b',lty = 6)
-lines(MatrixDeltaKMRCD[,1],MatrixDeltaKMRCD[,2], col='purple',pch = 15,type='b',lty = 6)
+
 dev.off()

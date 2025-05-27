@@ -228,15 +228,39 @@ for (rhoShift in ArrayRhoShift)
   MatrixDeltaKMRCD = rbind(MatrixDeltaKMRCD,RowdeltaKMRCD)
   
 }
+
+
+
+
+
+
+
+
 MatrixDeltaMRCD = MatrixDeltaMRCD[-1,]
 MatrixDeltaT2MOD = MatrixDeltaT2MOD[-1,]
 MatrixDeltaEBADIUI = MatrixDeltaEBADIUI[-1,]
 MatrixDeltaEBADIZI = MatrixDeltaEBADIZI[-1,]
 MatrixDeltaKMRCD = MatrixDeltaKMRCD[-1,]
 
-
+rm(list=ls())
+load("~/Downloads/Tesis/TesisCode/KMRCD/DatosKMRCD/Parametro(2,5)/SinalprobabilityGamma(2,5)150x250x0.2.RData")
+for (i in 1:length(ArrayRhoShift)) {
+  rhoShift = ArrayRhoShift[[i]]
+  DeltaNCP = sqrt(t(rep((rho+rhoShift)/beta,NumberVariable)-rep(rho/beta,NumberVariable))%*%Inverse%*%(rep((rho+rhoShift)/beta,NumberVariable)-rep(rho/beta,NumberVariable)))
+  MatrixDeltaMRCD[i,1] = DeltaNCP
+  MatrixDeltaT2MOD[i,1] = DeltaNCP
+  MatrixDeltaEBADIUI[i,1] = DeltaNCP
+  MatrixDeltaEBADIZI[i,1] = DeltaNCP
+  MatrixDeltaKMRCD[i,1] = DeltaNCP
+  
+}
+par(mar = c(10,5, 5, 5))
 p = plot(MatrixDeltaMRCD[,1],MatrixDeltaMRCD[,2], ylim = c(0,1), col='red', pch = 16,type='b', xlab ="Delta Values", ylab="Signal Probability",lty = 1)
 lines(MatrixDeltaT2MOD[,1],MatrixDeltaT2MOD[,2], col='green',pch = 17,type='b',lty = 4)
 lines(MatrixDeltaEBADIUI[,1],MatrixDeltaEBADIUI[,2], col='blue',pch = 18,type='b',lty = 5)
 lines(MatrixDeltaEBADIZI[,1],MatrixDeltaEBADIZI[,2], col='orange',pch = 15,type='b',lty = 6)
 lines(MatrixDeltaKMRCD[,1],MatrixDeltaKMRCD[,2], col='purple',pch = 15,type='b',lty = 6)
+library(svglite)
+urlplot ="/Users/kevin.pineda/Downloads/Tesis/TesisCode/Imagenes TG 2 KMRCD/ImagenGamma(2,5)150x250x0.2.svg"
+svglite(urlplot, width = 8, height = 8)
+dev.off()
